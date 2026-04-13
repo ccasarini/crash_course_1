@@ -1,0 +1,153 @@
+:root {
+    --wine-red: #7D0022;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --text-dark: #2c3e50;
+    --text-light: #5d6d7e;
+    --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    height: 100vh;
+    overflow: hidden;
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+/* Glassmorphism utility */
+.glass-overlay {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+    z-index: 1000;
+}
+
+/* Header overlay */
+.main-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 20px 30px;
+    pointer-events: none; /* Let clicks pass through to map if needed */
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.main-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--wine-red);
+    margin-bottom: 5px;
+}
+
+.main-header p {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* Landmarks list container */
+.landmarks-list-container {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
+    overflow-x: auto;
+    padding: 10px 0;
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+    opacity: 0;
+    transition: opacity 1s ease-out 0.5s;
+}
+
+.landmarks-list-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome/Safari */
+}
+
+.landmarks-grid {
+    display: flex;
+    gap: 15px;
+    width: max-content;
+}
+
+/* Landmark card */
+.landmark-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+    padding: 15px;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.landmark-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--wine-red);
+}
+
+.landmark-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--wine-red);
+    margin-bottom: 8px;
+}
+
+.landmark-card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--text-light);
+}
+
+/* Custom Marker Styling */
+.leaflet-popup-content-wrapper {
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.leaflet-popup-content h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--wine-red);
+    margin: 5px 0;
+}
+
+.leaflet-marker-icon {
+    filter: hue-rotate(320deg) saturate(2); /* Adjust default marker to be more wine-like */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .main-header {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        padding: 15px;
+    }
+    .main-header h1 {
+        font-size: 1.8rem;
+    }
+    .landmark-card {
+        width: 160px;
+    }
+}

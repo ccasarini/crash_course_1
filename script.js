@@ -41,6 +41,30 @@ const landmarks = [
         desc: "Considered one of the most beautiful 18th-century theaters in the world.",
         coords: [44.8428, -0.5742],
         zoom: 17
+    },
+    {
+        name: "Université de Bordeaux - Victoire",
+        desc: "The historic campus in the heart of the city, home to humanities and social sciences.",
+        coords: [44.8315, -0.5728],
+        zoom: 17
+    },
+    {
+        name: "Université de Bordeaux - Campus Talence",
+        desc: "A massive science and technology campus on the outskirts of the city.",
+        coords: [44.8078, -0.5956],
+        zoom: 16
+    },
+    {
+        name: "Université Bordeaux Montaigne",
+        desc: "The primary university for humanities, languages, and arts in the region.",
+        coords: [44.7958, -0.6133],
+        zoom: 16
+    },
+    {
+        name: "Sciences Po Bordeaux",
+        desc: "One of France's prestigious 'Grandes Écoles' for political science.",
+        coords: [44.7983, -0.6152],
+        zoom: 17
     }
 ];
 

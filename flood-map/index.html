@@ -3,257 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bangladesh Flood Archive | 1985-Present</title>
-    <!-- Google Fonts -->
+    <title>Bangladesh Flood & Migration Archive</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
-        :root {
-            --primary: #0f172a;
-            --accent: #3b82f6;
-            --sidebar-bg: #ffffff;
-            --text-main: #1e293b;
-            --text-muted: #64748b;
-            --bg-body: #f1f5f9;
-        }
-
-        * { box-sizing: border-box; }
+        :root { --primary: #0f172a; --accent: #3b82f6; --danger: #ef4444; --bg: #f8fafc; }
+        body { font-family: 'Inter', sans-serif; margin: 0; background: var(--bg); display: flex; flex-direction: column; height: 100vh; }
+        header { background: var(--primary); color: white; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; z-index: 1000; }
+        main { display: flex; flex: 1; overflow: hidden; }
+        #sidebar { width: 380px; background: white; border-right: 1px solid #e2e8f0; padding: 1.5rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem; }
+        #map { flex: 1; }
+        .card { background: white; border: 1px solid #f1f5f9; border-radius: 12px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .card h2 { font-size: 0.75rem; text-transform: uppercase; color: #64748b; margin: 0 0 0.5rem 0; }
         
-        body { 
-            font-family: 'Inter', sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background: var(--bg-body); 
-            display: flex; 
-            flex-direction: column; 
-            height: 100vh;
-            color: var(--text-main);
+        /* Animation for Migration Lines */
+        .migration-line {
+            stroke-dasharray: 10, 10;
+            animation: dash 1s linear infinite;
+        }
+        @keyframes dash {
+            to { stroke-dashoffset: -20; }
         }
 
-        header { 
-            background: var(--primary); 
-            color: white; 
-            padding: 1rem 2rem; 
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-            z-index: 1000;
+        .pulse {
+            animation: pulse-animation 2s infinite;
         }
-
-        header h1 { 
-            margin: 0; 
-            font-size: 1.25rem; 
-            font-weight: 600; 
-            letter-spacing: -0.025em;
-        }
-
-        .badge {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 4px 12px;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 400;
-        }
-
-        main { 
-            display: flex; 
-            flex: 1; 
-            overflow: hidden; 
-        }
-
-        #sidebar { 
-            width: 380px; 
-            background: var(--sidebar-bg); 
-            border-right: 1px solid #e2e8f0; 
-            padding: 1.5rem; 
-            overflow-y: auto; 
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        #map { 
-            flex: 1; 
-            height: 100%; 
-        }
-
-        .card {
-            background: white;
-            border: 1px solid #f1f5f9;
-            border-radius: 12px;
-            padding: 1.25rem;
-            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
-        }
-
-        .card h2 { 
-            margin: 0 0 0.75rem 0; 
-            font-size: 0.875rem; 
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--text-muted);
-            font-weight: 600;
-        }
-
-        .card p { 
-            font-size: 0.9375rem; 
-            line-height: 1.5;
-            margin: 0.5rem 0; 
-        }
-
-        .stat-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .stat-item {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .stat-label { font-size: 0.75rem; color: var(--text-muted); }
-        .stat-value { font-size: 1.125rem; font-weight: 600; color: var(--primary); }
-
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-size: 0.875rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .dot { height: 10px; width: 10px; border-radius: 50%; }
-
-        #details-placeholder {
-            text-align: center;
-            padding: 2rem 0;
-            color: var(--text-muted);
-            font-style: italic;
-            font-size: 0.875rem;
-        }
-
-        /* Leaflet Popup Styling */
-        .leaflet-popup-content-wrapper {
-            border-radius: 12px;
-            padding: 0;
-            overflow: hidden;
-        }
-        .leaflet-popup-content {
-            margin: 0;
-            padding: 1rem;
-        }
-        .popup-title {
-            font-weight: 600;
-            color: var(--primary);
-            border-bottom: 1px solid #f1f5f9;
-            padding-bottom: 0.5rem;
-            margin-bottom: 0.5rem;
+        @keyframes pulse-animation {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.5); opacity: 0.3; }
+            100% { transform: scale(1); opacity: 0.8; }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bangladesh Flood Archive</h1>
-        <div class="badge">1985 — Present</div>
+        <h1>Bangladesh Flood & Displacement</h1>
+        <div style="font-size: 0.75rem; background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 20px;">Live Simulation</div>
     </header>
     <main>
         <aside id="sidebar">
             <div class="card">
-                <h2>Project Data</h2>
-                <p>Visualizing 89 significant flood events. Data sourced from the Global Active Archive of Large Flood Events.</p>
-                <div class="legend-item">
-                    <div class="dot" style="background: var(--accent);"></div>
-                    <span>Flood Location</span>
-                </div>
-                <div class="legend-item">
-                    <div class="dot" style="background: #cbd5e1; border: 1px solid #94a3b8;"></div>
-                    <span>Size = Severity</span>
-                </div>
+                <h2>Migration Insight</h2>
+                <p style="font-size: 0.85rem; line-height: 1.4; margin: 0;">Flashes and moving lines show common population migration from flood-hit regions toward central hubs like <strong>Dhaka</strong>.</p>
             </div>
-
             <div id="event-card" class="card" style="display:none;">
-                <h2>Selected Event</h2>
+                <h2>Event Impact</h2>
                 <div id="details-content"></div>
             </div>
-
-            <div id="details-placeholder">
-                Click a map marker to view specific flood details and impact statistics.
-            </div>
+            <div style="font-size: 0.8rem; color: #94a3b8; text-align: center;">Click a flood marker to see its migration path.</div>
         </aside>
         <div id="map"></div>
     </main>
 
-    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // Use a more modern map style (CartoDB Positron)
-        var map = L.map('map', {
-            zoomControl: false // Move zoom control later
-        }).setView([23.6850, 90.3563], 7);
-        
+        var map = L.map('map', { zoomControl: false }).setView([23.6850, 90.3563], 7);
         L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
-        }).addTo(map);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(map);
 
+        const DHAKA = [23.8103, 90.4125];
+
+        // Load Border
+        fetch('bangladesh_border.geojson')
+            .then(res => res.json())
+            .then(borderData => {
+                L.geoJSON(borderData, {
+                    style: { color: "#334155", weight: 3, fillOpacity: 0.05, dashArray: "5, 5" }
+                }).addTo(map);
+            });
+
+        // Load Floods and Migration
         fetch('bangladesh_floods.geojson')
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => {
                 L.geoJSON(data, {
                     onEachFeature: function (feature, layer) {
-                        var props = feature.properties;
-                        
-                        // Custom Popup
-                        var popupContent = `
-                            <div class="popup-title">Event #${props.id}</div>
-                            <div style="font-size: 0.85rem; line-height: 1.4;">
-                                <strong>Date:</strong> ${props.date_start}<br>
-                                <strong>Cause:</strong> ${props.cause}
-                            </div>
-                        `;
-                        layer.bindPopup(popupContent);
-
-                        // Sidebar Interaction
                         layer.on('click', function() {
-                            document.getElementById('details-placeholder').style.display = 'none';
-                            const eventCard = document.getElementById('event-card');
-                            const content = document.getElementById('details-content');
-                            
-                            eventCard.style.display = 'block';
-                            content.innerHTML = `
-                                <div class="stat-grid">
-                                    <div class="stat-item">
-                                        <span class="stat-label">Started</span>
-                                        <span class="stat-value">${props.date_start}</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-label">Severity</span>
-                                        <span class="stat-value">${props.severity}</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-label">Deaths</span>
-                                        <span class="stat-value">${props.dead.toLocaleString()}</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-label">Displaced</span>
-                                        <span class="stat-value">${props.displaced.toLocaleString()}</span>
-                                    </div>
+                            // Show details
+                            const props = feature.properties;
+                            document.getElementById('event-card').style.display = 'block';
+                            document.getElementById('details-content').innerHTML = `
+                                <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
+                                    <div><small>Deaths</small><br><strong>${props.dead}</strong></div>
+                                    <div><small>Displaced</small><br><strong>${props.displaced.toLocaleString()}</strong></div>
                                 </div>
-                                <p style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
-                                    <strong>Primary Cause:</strong> ${props.cause}
-                                </p>
+                                <p style="font-size: 0.8rem; color: #64748b; margin-top: 10px;">Cause: ${props.cause}</p>
                             `;
+
+                            // DRAW MIGRATION LINE
+                            var floodPos = [feature.geometry.coordinates[1], feature.geometry.coordinates[0]];
+                            var line = L.polyline([floodPos, DHAKA], {
+                                color: '#3b82f6',
+                                weight: 2,
+                                opacity: 0.6,
+                                className: 'migration-line'
+                            }).addTo(map);
+
+                            // Auto-remove line after 5 seconds to keep map clean
+                            setTimeout(() => { map.removeLayer(line); }, 5000);
                         });
                     },
                     pointToLayer: function (feature, latlng) {
                         return L.circleMarker(latlng, {
-                            radius: feature.properties.severity * 7,
-                            fillColor: "#3b82f6",
-                            color: "#ffffff",
+                            radius: feature.properties.severity * 6,
+                            fillColor: "#ef4444", // Red for danger
+                            color: "#fff",
                             weight: 2,
                             opacity: 1,
                             fillOpacity: 0.7

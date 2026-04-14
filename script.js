@@ -1,37 +1,171 @@
-// Initialize the map, centered on Asia
-var map = L.map('map').setView([34.0479, 100.6197], 4); // 4 is the zoom level
+// Landmark data: Coordinates and descriptions
+const landmarks = [
+    {
+        name: "Place de la Bourse",
+        desc: "Home to the world's largest reflecting pool, the Miroir d'Eau.",
+        coords: [44.8412, -0.5699],
+        zoom: 17,
+        category: "landmark"
+    },
+    {
+        name: "La Grosse Cloche",
+        desc: "A stunning 15th-century belfry and one of the oldest belfries in France.",
+        coords: [44.8357, -0.5714],
+        zoom: 17,
+        category: "landmark"
+    },
+    {
+        name: "Cathédrale Saint-André",
+        desc: "Bordeaux's primary cathedral, where Eleanor of Aquitaine was married.",
+        coords: [44.8376, -0.5772],
+        zoom: 17,
+        category: "landmark"
+    },
+    {
+        name: "Monument aux Girondins",
+        desc: "A grand fountain and column honoring the Girondist revolutionaries.",
+        coords: [44.8443, -0.5744],
+        zoom: 17,
+        category: "landmark"
+    },
+    {
+        name: "Pont de Pierre",
+        desc: "The first bridge built over the Garonne river, commissioned by Napoleon.",
+        coords: [44.8378, -0.5645],
+        zoom: 16,
+        category: "landmark"
+    },
+    {
+        name: "Cité du Vin",
+        desc: "A unique cultural center dedicated to the universal heritage of wine.",
+        coords: [44.8624, -0.5501],
+        zoom: 17,
+        category: "landmark"
+    },
+    {
+        name: "Grand Théâtre",
+        desc: "Considered one of the most beautiful 18th-century theaters in the world.",
+        coords: [44.8428, -0.5742],
+        zoom: 17,
+        category: "landmark"
+    },
+    {
+        name: "Université de Bordeaux - Victoire",
+        desc: "The historic campus in the heart of the city, home to humanities and social sciences.",
+        coords: [44.8315, -0.5728],
+        zoom: 17,
+        category: "university"
+    },
+    {
+        name: "Université de Bordeaux - Campus Talence",
+        desc: "A massive science and technology campus on the outskirts of the city.",
+        coords: [44.8078, -0.5956],
+        zoom: 16,
+        category: "university"
+    },
+    {
+        name: "Université Bordeaux Montaigne",
+        desc: "The primary university for humanities, languages, and arts in the region.",
+        coords: [44.7958, -0.6133],
+        zoom: 16,
+        category: "university"
+    },
+    {
+        name: "Sciences Po Bordeaux",
+        desc: "One of France's prestigious 'Grandes Écoles' for political science.",
+        coords: [44.7983, -0.6152],
+        zoom: 17,
+        category: "university"
+    }
+];
 
-// Add background map (OpenStreetMap)
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap contributors'
+// Initialize the map
+const map = L.map('map', {
+    zoomControl: false // We'll move or hide it for a cleaner UI
+}).setView([44.8378, -0.5792], 14);
+
+// Add custom zoom control position
+L.control.zoom({
+    position: 'topright'
 }).addTo(map);
 
-// Load the GeoJSON file specifically for Asia
-fetch('asia_floods.geojson')
-    .then(response => response.json())
-    .then(data => {
-        // Add the GeoJSON data to the map
-        L.geoJSON(data, {
-            // Function to add a popup to each point
-            onEachFeature: function (feature, layer) {
-                var popupContent = "<b>Country: </b>" + feature.properties.country + "<br>" +
-                                   "<b>Date: </b>" + feature.properties.date + "<br>" +
-                                   "<b>Cause: </b>" + feature.properties.cause + "<br>" +
-                                   "<b>Deaths: </b>" + feature.properties.dead;
-                layer.bindPopup(popupContent);
-            },
-            // Style the markers (simple circles)
-            pointToLayer: function (feature, latlng) {
-                return L.circleMarker(latlng, {
-                    radius: 6,
-                    fillColor: "#ff7800", // Orange
-                    color: "#000",
-                    weight: 1,
-                    opacity: 1,
-                    fillOpacity: 0.8
-                });
-            }
-        }).addTo(map);
-    })
-    .catch(error => console.error('Error loading the GeoJSON file:', error));
+// Load CartoDB Positron (Light & Minimal)
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+	subdomains: 'abcd',
+	maxZoom: 20
+}).addTo(map);
+
+// Target the two distinct groups in the sidebar
+const landmarksGroup = document.getElementById('landmarks-group');
+const universitiesGroup = document.getElementById('universities-group');
+
+// Colors for markers
+const colors = {
+    landmark: '#7D0022', // Wine Red
+    university: '#215d6e' // Modern Teal/Navy
+};
+
+// Function to create custom SVG marker
+function createCustomIcon(category) {
+    const color = colors[category] || colors.landmark;
+    return L.divIcon({
+        className: 'custom-marker',
+        html: `<div style="background-color: ${color}; width: 14px; height: 14px; border-radius: 50%; border: 2.5px solid white; box-shadow: 0 0 8px rgba(0,0,0,0.15);"></div>`,
+        iconSize: [20, 20],
+        iconAnchor: [10, 10],
+        popupAnchor: [0, -10]
+    });
+}
+
+// Function to handle card clicks
+function focusLandmark(coords, zoom, marker) {
+    map.flyTo(coords, zoom, {
+        duration: 1.5,
+        easeLinearity: 0.25
+    });
+    marker.openPopup();
+}
+
+// Generate markers and cards
+landmarks.forEach(landmark => {
+    // 1. Create Marker with custom icon
+    const marker = L.marker(landmark.coords, {
+        icon: createCustomIcon(landmark.category)
+    }).addTo(map);
+    
+    marker.bindPopup(`
+        <div class="popup-content ${landmark.category}">
+            <span class="category-tag ${landmark.category}">${landmark.category}</span>
+            <h3>${landmark.name}</h3>
+            <p>${landmark.desc}</p>
+        </div>
+    `);
+
+    // 2. Create UI Card
+    const card = document.createElement('div');
+    card.className = `landmark-card ${landmark.category}`;
+    card.innerHTML = `
+        <h3>${landmark.name}</h3>
+        <p>${landmark.desc}</p>
+    `;
+
+    // 3. Add Click Event
+    card.addEventListener('click', () => {
+        focusLandmark(landmark.coords, landmark.zoom, marker);
+    });
+
+    // 4. Append to the correct group based on category
+    if (landmark.category === 'university') {
+        universitiesGroup.appendChild(card);
+    } else {
+        landmarksGroup.appendChild(card);
+    }
+});
+
+// Add a slight delay for better visual flow
+window.addEventListener('load', () => {
+    document.querySelector('.main-header').style.opacity = '1';
+    document.querySelector('.side-panel').style.opacity = '1';
+});
+

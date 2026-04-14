@@ -12,11 +12,10 @@
         header { background: var(--primary); color: white; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; z-index: 1000; }
         main { display: flex; flex: 1; overflow: hidden; }
         #sidebar { width: 380px; background: white; border-right: 1px solid #e2e8f0; padding: 1.5rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem; }
-        #map { flex: 1; }
+        #map { flex: 1; cursor: crosshair; }
         .card { background: white; border: 1px solid #f1f5f9; border-radius: 12px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
         .card h2 { font-size: 0.75rem; text-transform: uppercase; color: #64748b; margin: 0 0 0.5rem 0; }
         
-        /* Animation for Migration Lines */
         .migration-line {
             stroke-dasharray: 10, 10;
             animation: dash 1s linear infinite;
@@ -24,33 +23,40 @@
         @keyframes dash {
             to { stroke-dashoffset: -20; }
         }
-
-        .pulse {
-            animation: pulse-animation 2s infinite;
+        .legend {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+            line-height: 1.5;
+            font-size: 0.75rem;
         }
-        @keyframes pulse-animation {
-            0% { transform: scale(1); opacity: 0.8; }
-            50% { transform: scale(1.5); opacity: 0.3; }
-            100% { transform: scale(1); opacity: 0.8; }
+        .legend i {
+            width: 12px;
+            height: 12px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.8;
+            border-radius: 50%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bangladesh Flood & Displacement</h1>
-        <div style="font-size: 0.75rem; background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 20px;">Live Simulation</div>
+        <h1>Bangladesh Flood Research</h1>
+        <div style="font-size: 0.75rem; background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 20px;">Delineated Border View</div>
     </header>
     <main>
         <aside id="sidebar">
             <div class="card">
-                <h2>Migration Insight</h2>
-                <p style="font-size: 0.85rem; line-height: 1.4; margin: 0;">Flashes and moving lines show common population migration from flood-hit regions toward central hubs like <strong>Dhaka</strong>.</p>
+                <h2>Research Context</h2>
+                <p style="font-size: 0.85rem; line-height: 1.4; margin: 0;">The solid line marks the <strong>detailed political border</strong> of Bangladesh. Markers represent historical flood events. Hover for quick info, click for full simulation.</p>
             </div>
             <div id="event-card" class="card" style="display:none;">
-                <h2>Event Impact</h2>
+                <h2>Event Stats</h2>
                 <div id="details-content"></div>
             </div>
-            <div style="font-size: 0.8rem; color: #94a3b8; text-align: center;">Click a flood marker to see its migration path.</div>
+            <div style="font-size: 0.8rem; color: #94a3b8; text-align: center;">Click any <strong>Red Circle</strong> inside the border to trigger the migration simulation.</div>
         </aside>
         <div id="map"></div>
     </main>
@@ -60,62 +66,108 @@
         var map = L.map('map', { zoomControl: false }).setView([23.6850, 90.3563], 7);
         L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(map);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+        }).addTo(map);
 
         const DHAKA = [23.8103, 90.4125];
 
-        // Load Border
+        // 1. ADD BORDER LAYER (NON-INTERACTIVE SO IT DOES NOT BLOCK CLICKS)
         fetch('bangladesh_border.geojson')
             .then(res => res.json())
             .then(borderData => {
                 L.geoJSON(borderData, {
-                    style: { color: "#334155", weight: 3, fillOpacity: 0.05, dashArray: "5, 5" }
+                    interactive: false,
+                    style: {
+                        color: "#000",
+                        weight: 1.5,
+                        fillOpacity: 0.05,
+                        fillColor: "#000",
+                        opacity: 0.6
+                    }
                 }).addTo(map);
             });
 
-        // Load Floods and Migration
+        // 2. ADD FLOOD MARKERS
         fetch('bangladesh_floods.geojson')
             .then(res => res.json())
             .then(data => {
-                L.geoJSON(data, {
+                var floodLayer = L.geoJSON(data, {
                     onEachFeature: function (feature, layer) {
-                        layer.on('click', function() {
-                            // Show details
-                            const props = feature.properties;
+                        const props = feature.properties;
+                        
+                        // Tooltip
+                        layer.bindTooltip(`<strong>${props.cause}</strong><br>Severity: ${props.severity}`, {
+                            direction: 'top',
+                            offset: [0, -5]
+                        });
+
+                        layer.on('mouseover', function() {
+                            this.setStyle({
+                                fillColor: "#3b82f6",
+                                weight: 3
+                            });
+                        });
+
+                        layer.on('mouseout', function() {
+                            floodLayer.resetStyle(this);
+                        });
+
+                        layer.on('click', function(e) {
+                            L.DomEvent.stopPropagation(e);
+
                             document.getElementById('event-card').style.display = 'block';
                             document.getElementById('details-content').innerHTML = `
                                 <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
                                     <div><small>Deaths</small><br><strong>${props.dead}</strong></div>
                                     <div><small>Displaced</small><br><strong>${props.displaced.toLocaleString()}</strong></div>
                                 </div>
+                                <div style="margin-top: 10px;">
+                                    <small>Period</small><br>
+                                    <strong>${props.date_start} to ${props.date_end}</strong>
+                                </div>
                                 <p style="font-size: 0.8rem; color: #64748b; margin-top: 10px;">Cause: ${props.cause}</p>
                             `;
 
-                            // DRAW MIGRATION LINE
+                            // Trigger Migration Line
                             var floodPos = [feature.geometry.coordinates[1], feature.geometry.coordinates[0]];
                             var line = L.polyline([floodPos, DHAKA], {
                                 color: '#3b82f6',
-                                weight: 2,
-                                opacity: 0.6,
+                                weight: 3,
+                                opacity: 0.8,
                                 className: 'migration-line'
                             }).addTo(map);
 
-                            // Auto-remove line after 5 seconds to keep map clean
-                            setTimeout(() => { map.removeLayer(line); }, 5000);
+                            // Clean up
+                            setTimeout(() => { if(map.hasLayer(line)) map.removeLayer(line); }, 3000);
                         });
                     },
                     pointToLayer: function (feature, latlng) {
                         return L.circleMarker(latlng, {
-                            radius: feature.properties.severity * 6,
-                            fillColor: "#ef4444", // Red for danger
+                            radius: feature.properties.severity * 5,
+                            fillColor: "#ef4444",
                             color: "#fff",
-                            weight: 2,
+                            weight: 1.5,
                             opacity: 1,
-                            fillOpacity: 0.7
+                            fillOpacity: 0.8
                         });
                     }
                 }).addTo(map);
+                
+                floodLayer.bringToFront();
             });
+
+        // 3. ADD LEGEND
+        var legend = L.control({position: 'bottomleft'});
+        legend.onAdd = function (map) {
+            var div = L.DomUtil.create('div', 'legend');
+            div.innerHTML += '<h4>Flood Severity</h4>';
+            div.innerHTML += '<i style="background: #ef4444; width: 8px; height: 8px;"></i> Low<br>';
+            div.innerHTML += '<i style="background: #ef4444; width: 12px; height: 12px;"></i> Medium<br>';
+            div.innerHTML += '<i style="background: #ef4444; width: 16px; height: 12px;"></i> High<br>';
+            return div;
+        };
+        legend.addTo(map);
     </script>
 </body>
 </html>

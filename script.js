@@ -96,8 +96,9 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 	maxZoom: 20
 }).addTo(map);
 
-// Landmarks list element
-const landmarksList = document.getElementById('landmarks-list');
+// Target the two distinct groups in the sidebar
+const landmarksGroup = document.getElementById('landmarks-group');
+const universitiesGroup = document.getElementById('universities-group');
 
 // Colors for markers
 const colors = {
@@ -110,10 +111,10 @@ function createCustomIcon(category) {
     const color = colors[category] || colors.landmark;
     return L.divIcon({
         className: 'custom-marker',
-        html: `<div style="background-color: ${color}; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2);"></div>`,
-        iconSize: [22, 22],
-        iconAnchor: [11, 11],
-        popupAnchor: [0, -11]
+        html: `<div style="background-color: ${color}; width: 14px; height: 14px; border-radius: 50%; border: 2.5px solid white; box-shadow: 0 0 8px rgba(0,0,0,0.15);"></div>`,
+        iconSize: [20, 20],
+        iconAnchor: [10, 10],
+        popupAnchor: [0, -10]
     });
 }
 
@@ -145,7 +146,6 @@ landmarks.forEach(landmark => {
     const card = document.createElement('div');
     card.className = `landmark-card ${landmark.category}`;
     card.innerHTML = `
-        <span class="category-tag ${landmark.category}">${landmark.category}</span>
         <h3>${landmark.name}</h3>
         <p>${landmark.desc}</p>
     `;
@@ -155,13 +155,17 @@ landmarks.forEach(landmark => {
         focusLandmark(landmark.coords, landmark.zoom, marker);
     });
 
-    // 4. Append to list
-    landmarksList.appendChild(card);
+    // 4. Append to the correct group based on category
+    if (landmark.category === 'university') {
+        universitiesGroup.appendChild(card);
+    } else {
+        landmarksGroup.appendChild(card);
+    }
 });
 
 // Add a slight delay for better visual flow
 window.addEventListener('load', () => {
     document.querySelector('.main-header').style.opacity = '1';
-    document.querySelector('.landmarks-list-container').style.opacity = '1';
+    document.querySelector('.side-panel').style.opacity = '1';
 });
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bangladesh Flood Map</title>
+    <title>Bangladesh Flood & Health Infrastructure Map</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -21,12 +21,15 @@
         }
         .info-panel h2 { margin-top: 0; font-size: 1.2em; color: #1a365d; }
         .info-panel p { font-size: 0.9em; color: #4a5568; line-height: 1.4; }
+        .legend-dot { height: 10px; width: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; }
     </style>
 </head>
 <body>
     <div class="info-panel">
-        <h2>Bangladesh Floods</h2>
-        <p>This map shows historical flood data across Bangladesh. The circles indicate flood locations, with size representing the number of displaced people.</p>
+        <h2>Bangladesh Infrastructure</h2>
+        <p>This map overlays historical flood data with existing health facilities.</p>
+        <p><span class="legend-dot" style="background-color: #e53e3e;"></span> Flood Events</p>
+        <p><span class="legend-dot" style="background-color: #38a169;"></span> Health Facilities</p>
     </div>
     <div id="map"></div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -34,35 +37,38 @@
         // Initialize the map centered on Bangladesh
         var map = L.map('map').setView([23.8103, 90.4125], 7);
 
-        // Clean light-colored basemap (CartoDB Positron)
+        // Layers
+        var floodLayer = L.layerGroup().addTo(map);
+        var healthLayer = L.layerGroup().addTo(map);
+
+        // Clean light-colored basemap
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
         }).addTo(map);
 
-        // Function to determine circle size based on displaced people
+        // Add Layer Control
+        var overlays = {
+            "Flood Events": floodLayer,
+            "Health Facilities": healthLayer
+        };
+        L.control.layers(null, overlays).addTo(map);
+
         function getRadius(displaced) {
-            // Logarithmic scaling works better for data with huge ranges (from 0 to 33 million)
-            // It keeps smaller values visible while preventing large ones from being overwhelming.
             if (!displaced || displaced <= 0) return 3;
             var size = Math.log10(displaced) * 4;
-            return Math.min(size, 30); // Max size of 30 ensures the map stays readable
+            return Math.min(size, 30);
         }
 
-        // Add Bangladesh border for context
+        // Add Bangladesh border
         fetch('../flood-map/bangladesh_border.geojson')
             .then(res => res.json())
             .then(data => {
                 L.geoJSON(data, {
-                    style: {
-                        color: '#3182ce',
-                        weight: 2,
-                        fillOpacity: 0.05,
-                        fillColor: '#3182ce'
-                    }
+                    style: { color: '#3182ce', weight: 2, fillOpacity: 0.05, fillColor: '#3182ce' }
                 }).addTo(map);
             });
 
-        // Add flood data points
+        // Add flood data
         fetch('../flood-map/bangladesh_floods.geojson')
             .then(res => res.json())
             .then(data => {
@@ -70,7 +76,7 @@
                     pointToLayer: function (feature, latlng) {
                         return L.circleMarker(latlng, {
                             radius: getRadius(feature.properties.displaced),
-                            fillColor: "#e53e3e", // Red for intensity
+                            fillColor: "#e53e3e",
                             color: "#fff",
                             weight: 1,
                             opacity: 1,
@@ -81,11 +87,34 @@
                         var props = feature.properties;
                         var popupContent = '<strong>' + props.cause + '</strong><br/>' +
                             'Date: ' + props.date_start + '<br/>' +
-                            'Deaths: ' + props.dead + '<br/>' +
                             'Displaced: ' + props.displaced.toLocaleString();
                         layer.bindPopup(popupContent);
                     }
-                }).addTo(map);
+                }).addTo(floodLayer);
+            });
+
+        // Add health facilities data
+        fetch('health_facilities.geojson')
+            .then(res => res.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    pointToLayer: function (feature, latlng) {
+                        return L.circleMarker(latlng, {
+                            radius: 4,
+                            fillColor: "#38a169",
+                            color: "#fff",
+                            weight: 1,
+                            opacity: 1,
+                            fillOpacity: 0.8
+                        });
+                    },
+                    onEachFeature: function (feature, layer) {
+                        var props = feature.properties;
+                        var name = props.name || "Unnamed Facility";
+                        var type = props.amenity || props.healthcare || "Health Site";
+                        layer.bindPopup('<strong>' + name + '</strong><br/>Type: ' + type);
+                    }
+                }).addTo(healthLayer);
             });
     </script>
 </body>

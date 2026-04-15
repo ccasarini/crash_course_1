@@ -866,26 +866,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          90.1016,
-          25.2408
-        ]
-      },
-      "properties": {
-        "id": "1082",
-        "cause": "Monsoonal rain",
-        "date_start": "1996-06-27",
-        "date_end": "1996-07-09",
-        "dead": 6,
-        "displaced": 72000,
-        "severity": 1.0,
-        "is_inside_border": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           89.9688,
           23.0267
         ]
@@ -899,26 +879,6 @@
         "displaced": 2300000,
         "severity": 1.0,
         "is_inside_border": true
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.2861,
-          25.3736
-        ]
-      },
-      "properties": {
-        "id": "1105",
-        "cause": "Heavy Rain",
-        "date_start": "1996-08-26",
-        "date_end": "1996-09-07",
-        "dead": 20,
-        "displaced": 100000,
-        "severity": 1.0,
-        "is_inside_border": false
       }
     },
     {
@@ -1026,26 +986,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          93.1722,
-          26.7913
-        ]
-      },
-      "properties": {
-        "id": "1384",
-        "cause": "Monsoonal rain",
-        "date_start": "1998-06-09",
-        "date_end": "1998-06-12",
-        "dead": 77,
-        "displaced": 2000,
-        "severity": 1.0,
-        "is_inside_border": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           91.5543,
           24.721
         ]
@@ -1099,26 +1039,6 @@
         "displaced": 50000,
         "severity": 1.0,
         "is_inside_border": true
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          91.7119,
-          23.5072
-        ]
-      },
-      "properties": {
-        "id": "1603",
-        "cause": "Monsoonal rain",
-        "date_start": "2000-05-27",
-        "date_end": "2000-06-19",
-        "dead": 36,
-        "displaced": 10000,
-        "severity": 1.0,
-        "is_inside_border": false
       }
     },
     {
@@ -1219,46 +1139,6 @@
         "displaced": 0,
         "severity": 1.0,
         "is_inside_border": true
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.9923,
-          25.2225
-        ]
-      },
-      "properties": {
-        "id": "1960",
-        "cause": "Monsoonal rain",
-        "date_start": "2002-06-18",
-        "date_end": "2002-06-24",
-        "dead": 4,
-        "displaced": 20000,
-        "severity": 1.0,
-        "is_inside_border": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.8538,
-          26.1706
-        ]
-      },
-      "properties": {
-        "id": "2248",
-        "cause": "Monsoonal rain",
-        "date_start": "2003-06-11",
-        "date_end": "2003-10-10",
-        "dead": 600,
-        "displaced": 9500000,
-        "severity": 2.0,
-        "is_inside_border": false
       }
     },
     {
@@ -1399,26 +1279,6 @@
         "displaced": 80000,
         "severity": 1.0,
         "is_inside_border": true
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          91.2336,
-          23.9164
-        ]
-      },
-      "properties": {
-        "id": "3136",
-        "cause": "Monsoonal rain",
-        "date_start": "2007-07-21",
-        "date_end": "2007-10-15",
-        "dead": 1071,
-        "displaced": 5000000,
-        "severity": 1.0,
-        "is_inside_border": false
       }
     },
     {
@@ -1639,26 +1499,6 @@
         "displaced": 102000,
         "severity": 1.5,
         "is_inside_border": true
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          91.194,
-          23.6387
-        ]
-      },
-      "properties": {
-        "id": "4056",
-        "cause": "Tropical Storm Mahasen",
-        "date_start": "2013-05-14",
-        "date_end": "2013-05-16",
-        "dead": 19,
-        "displaced": 1166000,
-        "severity": 1.5,
-        "is_inside_border": false
       }
     },
     {

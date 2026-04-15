@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bangladesh Flood Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Helvetica Neue', sans-serif; }
+        #map { height: 100vh; width: 100%; background: #f0f0f0; }
+        .info-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1000;
+            max-width: 250px;
+        }
+        .info-panel h2 { margin-top: 0; font-size: 1.2em; color: #1a365d; }
+        .info-panel p { font-size: 0.9em; color: #4a5568; line-height: 1.4; }
+    </style>
+</head>
+<body>
+    <div class="info-panel">
+        <h2>Bangladesh Floods</h2>
+        <p>This map shows historical flood data across Bangladesh. The circles indicate flood locations, with size representing the number of displaced people.</p>
+    </div>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map centered on Bangladesh
+        var map = L.map('map').setView([23.8103, 90.4125], 7);
+
+        // Clean light-colored basemap (CartoDB Positron)
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+        }).addTo(map);
+
+        // Function to determine circle size based on displaced people
+        function getRadius(displaced) {
+            return Math.sqrt(displaced) / 20 || 5;
+        }
+
+        // Add Bangladesh border for context
+        fetch('../flood-map/bangladesh_border.geojson')
+            .then(res => res.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    style: {
+                        color: '#3182ce',
+                        weight: 2,
+                        fillOpacity: 0.05,
+                        fillColor: '#3182ce'
+                    }
+                }).addTo(map);
+            });
+
+        // Add flood data points
+        fetch('../flood-map/bangladesh_floods.geojson')
+            .then(res => res.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    pointToLayer: function (feature, latlng) {
+                        return L.circleMarker(latlng, {
+                            radius: getRadius(feature.properties.displaced),
+                            fillColor: "#e53e3e", // Red for intensity
+                            color: "#fff",
+                            weight: 1,
+                            opacity: 1,
+                            fillOpacity: 0.6
+                        });
+                    },
+                    onEachFeature: function (feature, layer) {
+                        var props = feature.properties;
+                        var popupContent = '<strong>' + props.cause + '</strong><br/>' +
+                            'Date: ' + props.date_start + '<br/>' +
+                            'Deaths: ' + props.dead + '<br/>' +
+                            'Displaced: ' + props.displaced.toLocaleString();
+                        layer.bindPopup(popupContent);
+                    }
+                }).addTo(map);
+            });
+    </script>
+</body>
+</html>

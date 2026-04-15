@@ -41,7 +41,11 @@
 
         // Function to determine circle size based on displaced people
         function getRadius(displaced) {
-            return Math.sqrt(displaced) / 20 || 5;
+            // Logarithmic scaling works better for data with huge ranges (from 0 to 33 million)
+            // It keeps smaller values visible while preventing large ones from being overwhelming.
+            if (!displaced || displaced <= 0) return 3;
+            var size = Math.log10(displaced) * 4;
+            return Math.min(size, 30); // Max size of 30 ensures the map stays readable
         }
 
         // Add Bangladesh border for context

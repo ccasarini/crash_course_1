@@ -96,8 +96,10 @@
                     onEachFeature: function (feature, layer) {
                         const props = feature.properties;
                         
+                        const isInside = props.is_inside_border;
+                        
                         // Tooltip
-                        layer.bindTooltip(`<strong>${props.cause}</strong><br>Severity: ${props.severity}`, {
+                        layer.bindTooltip(`<strong>${props.cause}</strong><br>Severity: ${props.severity}${isInside ? "" : "<br><span style='color:orange;'>⚠️ Cross-border/Outside</span>"}`, {
                             direction: 'top',
                             offset: [0, -5]
                         });
@@ -126,7 +128,7 @@
                                     <small>Period</small><br>
                                     <strong>${props.date_start} to ${props.date_end}</strong>
                                 </div>
-                                <p style="font-size: 0.8rem; color: #64748b; margin-top: 10px;">Cause: ${props.cause}</p>
+                                <p style="font-size: 0.8rem; color: #64748b; margin-top: 10px;">Cause: ${props.cause}${isInside ? "" : "<br><span style='color:#f59e0b;'>⚠️ Recorded outside political border</span>"}</p>
                             `;
 
                             // Trigger Migration Line
@@ -143,10 +145,11 @@
                         });
                     },
                     pointToLayer: function (feature, latlng) {
+                        const isInside = feature.properties.is_inside_border;
                         return L.circleMarker(latlng, {
                             radius: feature.properties.severity * 5,
-                            fillColor: "#ef4444",
-                            color: "#fff",
+                            fillColor: isInside ? "#ef4444" : "#f59e0b",
+                            color: isInside ? "#fff" : "#000",
                             weight: 1.5,
                             opacity: 1,
                             fillOpacity: 0.8

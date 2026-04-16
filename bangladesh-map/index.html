@@ -30,6 +30,7 @@
         <p>This map overlays historical flood data with existing health facilities.</p>
         <p><span class="legend-dot" style="background-color: #e53e3e;"></span> Flood Events</p>
         <p><span class="legend-dot" style="background-color: #38a169;"></span> Health Facilities</p>
+        <p><span class="legend-dot" style="background-color: #ed8936; border: 2px solid #fff; height: 12px; width: 12px;"></span> <strong>At-Risk Facilities (within 1km)</strong></p>
     </div>
     <div id="map"></div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -40,6 +41,7 @@
         // Layers
         var floodLayer = L.layerGroup().addTo(map);
         var healthLayer = L.layerGroup().addTo(map);
+        var atRiskLayer = L.layerGroup().addTo(map);
 
         // Clean light-colored basemap
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -49,7 +51,8 @@
         // Add Layer Control
         var overlays = {
             "Flood Events": floodLayer,
-            "Health Facilities": healthLayer
+            "Health Facilities": healthLayer,
+            "At-Risk Facilities": atRiskLayer
         };
         L.control.layers(null, overlays).addTo(map);
 
@@ -93,7 +96,7 @@
                 }).addTo(floodLayer);
             });
 
-        // Add health facilities data
+        // Add general health facilities data
         fetch('health_facilities.geojson')
             .then(res => res.json())
             .then(data => {
@@ -115,6 +118,34 @@
                         layer.bindPopup('<strong>' + name + '</strong><br/>Type: ' + type);
                     }
                 }).addTo(healthLayer);
+            });
+
+        // Add at-risk health facilities data (Highlighted in Orange)
+        fetch('at_risk_health_facilities.geojson')
+            .then(res => res.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    pointToLayer: function (feature, latlng) {
+                        return L.circleMarker(latlng, {
+                            radius: 8, // Larger to stand out
+                            fillColor: "#ed8936", // Orange warning color
+                            color: "#fff",
+                            weight: 2,
+                            opacity: 1,
+                            fillOpacity: 1
+                        });
+                    },
+                    onEachFeature: function (feature, layer) {
+                        var props = feature.properties;
+                        var name = props.name || "Unnamed Facility";
+                        var dist = props.risk_distance;
+                        var cause = props.risk_cause;
+                        layer.bindPopup('<strong style="color: #ed8936;">⚠️ AT RISK FACILITY</strong><br/>' +
+                            '<strong>' + name + '</strong><br/>' +
+                            'Distance to flood: ' + dist + 'm<br/>' +
+                            'Cause: ' + cause);
+                    }
+                }).addTo(atRiskLayer);
             });
     </script>
 </body>

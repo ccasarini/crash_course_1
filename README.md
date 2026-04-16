@@ -1,18 +1,26 @@
-# Bordeaux Interactive Map
+# Bangladesh Flood Resilience Project
 
-A sleek, interactive map of Bordeaux, France, built with Leaflet.js and modern glassmorphic UI elements.
+An interactive platform for visualizing historical flood data and assessing infrastructure risk in Bangladesh.
 
 ## Features
-- **Interactive Landmarks:** Click on floating cards to fly to key locations like the Miroir d'Eau, La Grosse Cloche, and Cité du Vin.
-- **Modern Aesthetics:** Features glassmorphic overlays, "Bordeaux wine" accent colors, and elegant typography.
-- **Minimalist Tiles:** Uses CartoDB Positron tiles for a clean, distraction-free map experience.
-- **Zero Build Tools:** Built purely with Vanilla JS, CSS, and HTML, making it perfect for GitHub Pages.
+- **Landing Page:** A central hub for the project with dataset metadata and navigation.
+- **Flood Archive Map:** Interactive visualization of major flood events (1985-2024) with migration/displacement patterns.
+- **Infrastructure Risk Map:** Detailed view of at-risk health facilities and schools.
+- **Analytics Dashboard:** Statistical insights into fatalities, causes, and severity of flood events in Bangladesh.
+- **CSV Data Visualizer:** A tool for researchers to upload and visualize their own flood-related datasets.
+
+## Datasets
+- **Historical Flood Archive:** Global Flood Archive (Dartmouth Flood Observatory)
+- **Health Facilities:** OpenStreetMap (OSM) via Overpass API
+- **Educational Institutions:** OSM / HDX
+- **Boundaries:** Natural Earth
 
 ## How to View
-This project is designed to be hosted on GitHub Pages. To view it locally:
-1. Open `index.html` in any modern web browser.
+This project is hosted on GitHub Pages. To view locally:
+1. Open `index.html` in a web browser.
 
 ## Built With
 - [Leaflet.js](https://leafletjs.com/)
-- [CartoDB Tiles](https://carto.com/help/working-with-data/carto-basemaps/)
-- Google Fonts (Inter & Playfair Display)
+- [Chart.js](https://www.chartjs.org/)
+- [Papa Parse](https://www.papaparse.com/)
+- Vanilla JavaScript & CSS

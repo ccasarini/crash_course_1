@@ -81,17 +81,24 @@
 </head>
 <body>
 
-<header>
-    <h1>Flood Archive Analytics</h1>
-    <p class="description">Visualizing historical flood data from the cleaned archive.</p>
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #fff; border-bottom: 1px solid #e2e8f0; margin-bottom: 2rem;">
+    <div>
+        <h1 style="margin: 0; font-size: 1.5rem;">Flood Archive Analytics</h1>
+        <p class="description" style="margin: 0; font-size: 0.9rem;">Visualizing major flood events in Bangladesh (1985-2024)</p>
+    </div>
+    <nav style="display: flex; gap: 1.5rem;">
+        <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600;">Home</a>
+        <a href="flood-map/index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600;">Map</a>
+        <a href="upload.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600;">Upload</a>
+    </nav>
 </header>
 
 <div id="loading" class="loading">Loading data and generating charts...</div>
 
 <div class="dashboard" id="dashboard" style="display: none;">
-    <!-- Card 1: Top 20 Countries -->
+    <!-- Card 1: Fatalities per Year -->
     <div class="card">
-        <h2>Top 20 Countries by Flood Events</h2>
+        <h2>Total Fatalities per Year</h2>
         <canvas id="chartCountries"></canvas>
     </div>
 
@@ -103,7 +110,7 @@
 
     <!-- Card 3: Events by Category -->
     <div class="card">
-        <h2>Events by Category (Reason)</h2>
+        <h2>Flood Events by Cause</h2>
         <canvas id="chartCategories"></canvas>
     </div>
 
@@ -129,17 +136,16 @@
     });
 
     function processData(data) {
-        // Filter out any empty rows
-        const cleanData = data.filter(row => row.Country && row.Year);
+        // Filter for Bangladesh and valid rows
+        const cleanData = data.filter(row => row.Country === 'BANGLADESH' && row.Year);
 
-        // --- (1) Aggregation: Events by Country ---
-        const countryCounts = {};
+        // --- (1) Aggregation: Dead per Year ---
+        const deadPerYear = {};
         cleanData.forEach(row => {
-            countryCounts[row.Country] = (countryCounts[row.Country] || 0) + 1;
+            const dead = parseInt(row.Dead) || 0;
+            deadPerYear[row.Year] = (deadPerYear[row.Year] || 0) + dead;
         });
-        const topCountries = Object.entries(countryCounts)
-            .sort((a, b) => b[1] - a[1])
-            .slice(0, 20);
+        const sortedDeadYears = Object.entries(deadPerYear).sort((a, b) => a[0] - b[0]);
 
         // --- (2) Aggregation: Events per Year ---
         const yearCounts = {};
@@ -169,10 +175,10 @@
         document.getElementById('dashboard').style.display = 'grid';
 
         // --- Render Charts ---
-        createBarChart('chartCountries', 'Events', topCountries.map(x => x[0]), topCountries.map(x => x[1]), '#3b82f6');
-        createLineChart('chartYears', 'Events', sortedYears.map(x => x[0]), sortedYears.map(x => x[1]), '#10b981');
-        createBarChart('chartCategories', 'Events', Object.keys(categoryCounts), Object.values(categoryCounts), '#f59e0b');
-        createBarChart('chartSeverity', 'Total Displaced', sortedSeverity.map(x => "Level " + x[0]), sortedSeverity.map(x => x[1]), '#ef4444');
+        createBarChart('chartCountries', 'Total Fatalities', sortedDeadYears.map(x => x[0]), sortedDeadYears.map(x => x[1]), '#ef4444');
+        createLineChart('chartYears', 'Flood Events', sortedYears.map(x => x[0]), sortedYears.map(x => x[1]), '#10b981');
+        createBarChart('chartCategories', 'Events by Cause', Object.keys(categoryCounts), Object.values(categoryCounts), '#f59e0b');
+        createBarChart('chartSeverity', 'Total Displaced', sortedSeverity.map(x => "Level " + x[0]), sortedSeverity.map(x => x[1]), '#3b82f6');
     }
 
     function createBarChart(canvasId, label, labels, data, color) {

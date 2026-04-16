@@ -576,27 +576,27 @@
     ];
 
     // Example dataset
-    const EXAMPLE_DATA = `ID,GlideNumber,Country,multi_country,longitude,latitude,Area,Began,Ended,Validation,Dead,Displaced,MainCause,Severity,categorised_cause
-2178,0,Mozambique,Multi-country,35.52,23.88,137205.77,37685,37696,News,8,8300,Heavy rain,1,Heavy Rain
-5015,1,Mozambique,Multi-country,34.84,-19.84,1148874.13,44218,44221,FloodList,6,0,Tropical Storm Eloise,1.5,Storm
-4023,2,Mozambique,Multi-country,35.31,-17.88,83155.21,41291,41337,News,135,170000,Heavy Rain,1.5,Heavy Rain
-2430,3,Namibia,Multi-country,17.08,-22.57,615606.17,38018,38140,News,10,40000,Heavy rain,2,Heavy Rain
-3521,4,Kenya,Multi-country,37.91,-1.29,25000,40200,40210,News,50,25000,Flash Flood,1.5,Flood
-2891,5,Madagascar,Multi-country,46.87,-18.91,587041,39100,39150,News,25,15000,Cyclone,2,Storm
-4102,6,Tanzania,Multi-country,34.89,-6.16,94560,41500,41520,News,18,8500,Heavy Rain,1,Heavy Rain
-3678,7,Zimbabwe,Multi-country,29.15,-19.02,39058,40800,40830,News,42,12000,Flooding,1.5,Flood
-2567,8,Malawi,Multi-country,33.78,-13.97,11848,38500,38520,News,65,45000,Flood,2,Flood
-4521,9,South Africa,Multi-country,28.04,-26.20,121909,42100,42115,News,85,22000,Storm Surge,1.5,Storm
-3145,10,Zambia,Multi-country,28.28,-15.42,75261,39800,39825,News,12,9000,River Flood,1,Flood
-2789,11,Botswana,Multi-country,25.92,-24.65,58173,38800,38840,News,5,3500,Flash Flood,0.5,Flood
-4678,12,Ethiopia,Multi-country,38.75,9.03,110431,42500,42530,News,95,55000,Landslide,2,Landslide
-3890,13,Uganda,Multi-country,32.58,1.37,24155,41000,41020,News,28,18000,Heavy Rain,1,Heavy Rain
-2345,14,Rwanda,Multi-country,29.87,-1.94,2634,37900,37910,News,15,7500,Flood,1,Flood
-4234,15,Burundi,Multi-country,29.36,-3.38,2783,41800,41815,News,22,11000,Landslide,1.5,Landslide
-3456,16,DRC,Multi-country,23.66,-2.88,234500,40400,40450,News,110,85000,River Flood,2,Flood
-2678,17,Angola,Multi-country,13.23,-8.84,124670,38600,38650,News,35,28000,Heavy Rain,1.5,Heavy Rain
-4890,18,Somalia,Multi-country,45.34,2.04,63766,42800,42830,News,45,32000,Flash Flood,1.5,Flood
-3234,19,Eritrea,Multi-country,38.93,15.33,12173,39600,39620,News,8,4500,Heavy Rain,1,Heavy Rain`;
+    const EXAMPLE_DATA = `ID,GlideNumber,Country,multi_country,latitude,longitude,Area,Began,Ended,Validation,Dead,Displaced,MainCause,Severity,categorised_cause
+2178,0,Mozambique,Multi-country,-25.96,32.58,137205.77,37685,37696,News,8,8300,Heavy rain,1,Heavy Rain
+5015,1,Mozambique,Multi-country,-19.84,34.84,1148874.13,44218,44221,FloodList,6,0,Tropical Storm Eloise,1.5,Storm
+4023,2,Mozambique,Multi-country,-17.88,35.31,83155.21,41291,41337,News,135,170000,Heavy Rain,1.5,Heavy Rain
+2430,3,Namibia,Multi-country,-22.57,17.08,615606.17,38018,38140,News,10,40000,Heavy rain,2,Heavy Rain
+3521,4,Kenya,Multi-country,-1.29,36.82,25000,40200,40210,News,50,25000,Flash Flood,1.5,Flood
+2891,5,Madagascar,Multi-country,-18.91,47.52,587041,39100,39150,News,25,15000,Cyclone,2,Storm
+4102,6,Tanzania,Multi-country,-6.37,34.89,94560,41500,41520,News,18,8500,Heavy Rain,1,Heavy Rain
+3678,7,Zimbabwe,Multi-country,-19.02,29.15,39058,40800,40830,News,42,12000,Flooding,1.5,Flood
+2567,8,Malawi,Multi-country,-13.97,33.78,11848,38500,38520,News,65,45000,Flood,2,Flood
+4521,9,South Africa,Multi-country,-30.56,22.94,121909,42100,42115,News,85,22000,Storm Surge,1.5,Storm
+3145,10,Zambia,Multi-country,-13.13,27.85,75261,39800,39825,News,12,9000,River Flood,1,Flood
+2789,11,Botswana,Multi-country,-22.33,24.68,58173,38800,38840,News,5,3500,Flash Flood,0.5,Flood
+4678,12,Ethiopia,Multi-country,9.15,40.49,110431,42500,42530,News,95,55000,Landslide,2,Landslide
+3890,13,Uganda,Multi-country,1.37,32.29,24155,41000,41020,News,28,18000,Heavy Rain,1,Heavy Rain
+2345,14,Rwanda,Multi-country,-1.94,29.87,2634,37900,37910,News,15,7500,Flood,1,Flood
+4234,15,Burundi,Multi-country,-3.37,29.92,2783,41800,41815,News,22,11000,Landslide,1.5,Landslide
+3456,16,DRC,Multi-country,-4.04,21.76,234500,40400,40450,News,110,85000,River Flood,2,Flood
+2678,17,Angola,Multi-country,-11.20,17.87,124670,38600,38650,News,35,28000,Heavy Rain,1.5,Heavy Rain
+4890,18,Somalia,Multi-country,5.15,46.20,63766,42800,42830,News,45,32000,Flash Flood,1.5,Flood
+3234,19,Eritrea,Multi-country,15.18,39.78,12173,39600,39620,News,8,4500,Heavy Rain,1,Heavy Rain\`;
 
     // Initialize map
     function initMap() {

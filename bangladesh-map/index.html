@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bangladesh Flood & Health Infrastructure Map</title>
+    <title>Bangladesh Infrastructure Risk Map</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -9,144 +9,98 @@
         body { margin: 0; padding: 0; font-family: 'Helvetica Neue', sans-serif; }
         #map { height: 100vh; width: 100%; background: #f0f0f0; }
         .info-panel {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            z-index: 1000;
-            max-width: 250px;
+            position: absolute; top: 20px; right: 20px; background: white; padding: 15px;
+            border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 1000; max-width: 250px;
         }
         .info-panel h2 { margin-top: 0; font-size: 1.2em; color: #1a365d; }
-        .info-panel p { font-size: 0.9em; color: #4a5568; line-height: 1.4; }
-        .legend-dot { height: 10px; width: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; }
+        .info-panel p { font-size: 0.85em; color: #4a5568; line-height: 1.4; margin: 5px 0; }
+        
+        /* Custom Shapes using CSS */
+        .shape-circle { border-radius: 50%; border: 1px solid white; }
+        .shape-square { border-radius: 0%; border: 1px solid white; }
+        .legend-item { display: flex; align-items: center; margin-bottom: 4px; }
+        .symbol { width: 12px; height: 12px; margin-right: 8px; display: inline-block; }
     </style>
 </head>
 <body>
     <div class="info-panel">
-        <h2>Bangladesh Infrastructure</h2>
-        <p>This map overlays historical flood data with existing health facilities.</p>
-        <p><span class="legend-dot" style="background-color: #e53e3e;"></span> Flood Events</p>
-        <p><span class="legend-dot" style="background-color: #38a169;"></span> Health Facilities</p>
-        <p><span class="legend-dot" style="background-color: #ed8936; border: 2px solid #fff; height: 12px; width: 12px;"></span> <strong>At-Risk Facilities (within 1km)</strong></p>
+        <h2>Risk Assessment</h2>
+        <p>Comparison of Health and Education sites near flood zones.</p>
+        <hr/>
+        <div class="legend-item"><span class="symbol" style="background: #e53e3e; border-radius: 50%;"></span> Floods (Red Circle)</div>
+        <div class="legend-item"><span class="symbol" style="background: #38a169; border-radius: 50%;"></span> Health (Green Circle)</div>
+        <div class="legend-item"><span class="symbol" style="background: #805ad5; border-radius: 0%;"></span> Schools (Purple Square)</div>
+        <div class="legend-item"><span class="symbol" style="background: #ed8936; border: 2px solid white; width:14px; height:14px;"></span> <strong>At-Risk (Orange)</strong></div>
     </div>
     <div id="map"></div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // Initialize the map centered on Bangladesh
         var map = L.map('map').setView([23.8103, 90.4125], 7);
-
-        // Layers
         var floodLayer = L.layerGroup().addTo(map);
         var healthLayer = L.layerGroup().addTo(map);
-        var atRiskLayer = L.layerGroup().addTo(map);
+        var schoolLayer = L.layerGroup().addTo(map);
+        var riskLayer = L.layerGroup().addTo(map);
 
-        // Clean light-colored basemap
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a>'
         }).addTo(map);
 
-        // Add Layer Control
         var overlays = {
             "Flood Events": floodLayer,
             "Health Facilities": healthLayer,
-            "At-Risk Facilities": atRiskLayer
+            "Schools": schoolLayer,
+            "At-Risk Sites": riskLayer
         };
         L.control.layers(null, overlays).addTo(map);
 
-        function getRadius(displaced) {
-            if (!displaced || displaced <= 0) return 3;
-            var size = Math.log10(displaced) * 4;
-            return Math.min(size, 30);
-        }
+        // 1. Bangladesh Border
+        fetch('../flood-map/bangladesh_border.geojson').then(res => res.json()).then(data => {
+            L.geoJSON(data, { style: { color: '#cbd5e0', weight: 1, fillOpacity: 0.02 } }).addTo(map);
+        });
 
-        // Add Bangladesh border
-        fetch('../flood-map/bangladesh_border.geojson')
-            .then(res => res.json())
-            .then(data => {
-                L.geoJSON(data, {
-                    style: { color: '#3182ce', weight: 2, fillOpacity: 0.05, fillColor: '#3182ce' }
-                }).addTo(map);
-            });
+        // 2. Floods (Red Circles)
+        fetch('../flood-map/bangladesh_floods.geojson').then(res => res.json()).then(data => {
+            L.geoJSON(data, {
+                pointToLayer: (f, l) => L.circleMarker(l, { radius: 5, fillColor: "#e53e3e", color: "#fff", weight: 1, fillOpacity: 0.6 })
+            }).addTo(floodLayer);
+        });
 
-        // Add flood data
-        fetch('../flood-map/bangladesh_floods.geojson')
-            .then(res => res.json())
-            .then(data => {
-                L.geoJSON(data, {
-                    pointToLayer: function (feature, latlng) {
-                        return L.circleMarker(latlng, {
-                            radius: getRadius(feature.properties.displaced),
-                            fillColor: "#e53e3e",
-                            color: "#fff",
-                            weight: 1,
-                            opacity: 1,
-                            fillOpacity: 0.6
-                        });
-                    },
-                    onEachFeature: function (feature, layer) {
-                        var props = feature.properties;
-                        var popupContent = '<strong>' + props.cause + '</strong><br/>' +
-                            'Date: ' + props.date_start + '<br/>' +
-                            'Displaced: ' + props.displaced.toLocaleString();
-                        layer.bindPopup(popupContent);
-                    }
-                }).addTo(floodLayer);
-            });
+        // 3. Health (Green Circles)
+        fetch('health_facilities.geojson').then(res => res.json()).then(data => {
+            L.geoJSON(data, {
+                pointToLayer: (f, l) => L.circleMarker(l, { radius: 3, fillColor: "#38a169", color: "#fff", weight: 0.5, fillOpacity: 0.8 }),
+                onEachFeature: (f, lyr) => lyr.bindPopup("Health: " + (f.properties.name || "Unnamed"))
+            }).addTo(healthLayer);
+        });
 
-        // Add general health facilities data
-        fetch('health_facilities.geojson')
-            .then(res => res.json())
-            .then(data => {
-                L.geoJSON(data, {
-                    pointToLayer: function (feature, latlng) {
-                        return L.circleMarker(latlng, {
-                            radius: 4,
-                            fillColor: "#38a169",
-                            color: "#fff",
-                            weight: 1,
-                            opacity: 1,
-                            fillOpacity: 0.8
-                        });
-                    },
-                    onEachFeature: function (feature, layer) {
-                        var props = feature.properties;
-                        var name = props.name || "Unnamed Facility";
-                        var type = props.amenity || props.healthcare || "Health Site";
-                        layer.bindPopup('<strong>' + name + '</strong><br/>Type: ' + type);
-                    }
-                }).addTo(healthLayer);
-            });
+        // 4. Schools (Purple Squares)
+        fetch('schools.geojson').then(res => res.json()).then(data => {
+            L.geoJSON(data, {
+                pointToLayer: (f, l) => L.marker(l, {
+                    icon: L.divIcon({
+                        className: 'shape-square',
+                        html: '<div style="background:#805ad5; width:6px; height:6px;"></div>',
+                        iconSize: [6, 6]
+                    })
+                }),
+                onEachFeature: (f, lyr) => lyr.bindPopup("School: " + (f.properties.name || "Unnamed"))
+            }).addTo(schoolLayer);
+        });
 
-        // Add at-risk health facilities data (Highlighted in Orange)
-        fetch('at_risk_health_facilities.geojson')
-            .then(res => res.json())
-            .then(data => {
+        // 5. At-Risk Sites (Orange Highlights)
+        const addRiskData = (url, type) => {
+            fetch(url).then(res => res.json()).then(data => {
                 L.geoJSON(data, {
-                    pointToLayer: function (feature, latlng) {
-                        return L.circleMarker(latlng, {
-                            radius: 8, // Larger to stand out
-                            fillColor: "#ed8936", // Orange warning color
-                            color: "#fff",
-                            weight: 2,
-                            opacity: 1,
-                            fillOpacity: 1
-                        });
-                    },
-                    onEachFeature: function (feature, layer) {
-                        var props = feature.properties;
-                        var name = props.name || "Unnamed Facility";
-                        var dist = props.risk_distance;
-                        var cause = props.risk_cause;
-                        layer.bindPopup('<strong style="color: #ed8936;">⚠️ AT RISK FACILITY</strong><br/>' +
-                            '<strong>' + name + '</strong><br/>' +
-                            'Distance to flood: ' + dist + 'm<br/>' +
-                            'Cause: ' + cause);
-                    }
-                }).addTo(atRiskLayer);
+                    pointToLayer: (f, l) => L.circleMarker(l, { 
+                        radius: 7, fillColor: "#ed8936", color: "#fff", weight: 2, fillOpacity: 1 
+                    }),
+                    onEachFeature: (f, lyr) => lyr.bindPopup("<strong>⚠️ AT RISK " + type + "</strong><br/>" + (f.properties.name || "Unnamed"))
+                }).addTo(riskLayer);
             });
+        };
+        addRiskData('at_risk_health_facilities.geojson', 'HEALTH');
+        addRiskData('at_risk_schools.geojson', 'SCHOOL');
+
     </script>
 </body>
 </html>

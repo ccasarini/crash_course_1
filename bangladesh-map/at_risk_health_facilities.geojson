@@ -1,0 +1,94 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.7719261,
+          24.4896609
+        ]
+      },
+      "properties": {
+        "addr:city": "Moulvibazar",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Matri Mangal Hospital",
+        "name:bn": "\u09ae\u09be\u09a4\u09c3 \u09ae\u0999\u09cd\u0997\u09b2 \u09b9\u09be\u09b8\u09aa\u09be\u09a4\u09be\u09b2",
+        "risk_distance": 790,
+        "risk_cause": "Heavy rain"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.0785145,
+          21.8701375
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Digital Hospital Coxbazar pvt ltd \u09a1\u09bf\u099c\u09bf\u099f\u09be\u09b2 \u09b9\u09be\u09b8\u09aa\u09be\u09a4\u09be\u09b2",
+        "risk_distance": 999,
+        "risk_cause": "Monsoonal rain"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.076249,
+          21.7670625
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Chakaria Unique Hospital",
+        "risk_distance": 980,
+        "risk_cause": "Heavy rain"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3485806,
+          23.8118078
+        ]
+      },
+      "properties": {
+        "addr:suburb": "Bashpotti Slum",
+        "amenity": "clinic",
+        "capacity:persons": "20",
+        "name": "Radda HmSfp centre",
+        "source": "DhakaThrive_Survey",
+        "risk_distance": 942,
+        "risk_cause": "Monsoonal rain"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.899443,
+          24.1383886
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Elasin Union Health and Family Welfare Centre, Hospital",
+        "risk_distance": 762,
+        "risk_cause": "Heavy rain"
+      }
+    }
+  ]
+}

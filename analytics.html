@@ -88,7 +88,8 @@
     </div>
     <nav style="display: flex; gap: 1.5rem;">
         <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600;">Home</a>
-        <a href="flood-map/index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600;">Map</a>
+        <a href="flood-archive-map.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600;">Flood Map</a>
+        <a href="infrastructure-map.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600;">Infra Map</a>
         <a href="upload.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600;">Upload</a>
     </nav>
 </header>
@@ -123,7 +124,7 @@
 
 <script>
     // 1. Fetch and Parse the CSV data
-    Papa.parse("floodarchive_cleaned.txt", {
+    Papa.parse("data/floodarchive_cleaned.txt", {
         download: true,
         header: true,
         dynamicTyping: true,

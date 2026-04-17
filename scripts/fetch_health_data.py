@@ -40,10 +40,10 @@ for url in SERVERS:
                     "properties": element.get('tags', {})
                 })
             
-            with open('bangladesh-map/health_facilities.geojson', 'w') as f:
+            with open('../data/health_facilities.geojson', 'w') as f:
                 json.dump({"type": "FeatureCollection", "features": features}, f, indent=2)
             
-            print(f"SUCCESS! Saved {len(features)} facilities to bangladesh-map/health_facilities.geojson")
+            print(f"SUCCESS! Saved {len(features)} facilities to ../data/health_facilities.geojson")
             success = True
             break
         else:

@@ -45,9 +45,10 @@
     <header>
         <h1>Bangladesh Flood Research</h1>
         <nav style="display: flex; gap: 1.5rem;">
-            <a href="../index.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 500;">Home</a>
-            <a href="../analytics.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 500;">Analytics</a>
-            <a href="../upload.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 500;">Upload</a>
+            <a href="index.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 500;">Home</a>
+            <a href="infrastructure-map.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 500;">Infra Map</a>
+            <a href="analytics.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 500;">Analytics</a>
+            <a href="upload.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 500;">Upload</a>
         </nav>
         <div style="font-size: 0.75rem; background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 20px;">Delineated Border View</div>
     </header>
@@ -78,7 +79,7 @@
         const DHAKA = [23.8103, 90.4125];
 
         // 1. ADD BORDER LAYER (NON-INTERACTIVE SO IT DOES NOT BLOCK CLICKS)
-        fetch('bangladesh_border.geojson')
+        fetch('data/bangladesh_border.geojson')
             .then(res => res.json())
             .then(borderData => {
                 L.geoJSON(borderData, {
@@ -94,7 +95,7 @@
             });
 
         // 2. ADD FLOOD MARKERS
-        fetch('bangladesh_floods.geojson')
+        fetch('data/bangladesh_floods.geojson')
             .then(res => res.json())
             .then(data => {
                 var floodLayer = L.geoJSON(data, {

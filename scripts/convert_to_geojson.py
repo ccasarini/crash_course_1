@@ -56,4 +56,4 @@ def excel_to_geojson(excel_file, geojson_file, border_file=None):
         json.dump(geojson, f, indent=2)
 
 if __name__ == "__main__":
-    excel_to_geojson('floodarchive.xlsx', 'bangladesh_floods.geojson', 'bangladesh_border.geojson')
+    excel_to_geojson('../data/floodarchive.xlsx', '../data/bangladesh_floods.geojson', '../data/bangladesh_border.geojson')

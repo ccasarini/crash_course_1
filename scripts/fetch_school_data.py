@@ -11,7 +11,7 @@ for url in SERVERS:
         if r.status_code == 200:
             data = r.json()
             features = [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [e['lon'], e['lat']]}, "properties": e.get('tags', {})} for e in data.get('elements', [])]
-            with open('bangladesh-map/schools.geojson', 'w') as f:
+            with open('../data/schools.geojson', 'w') as f:
                 json.dump({"type": "FeatureCollection", "features": features}, f)
             print(f"Fetched {len(features)} schools.")
             break
@@ -26,9 +26,9 @@ def haversine(lon1, lat1, lon2, lat2):
     a = sin((lat2-lat1)/2)**2 + cos(lat1) * cos(lat2) * sin((lon2-lon1)/2)**2
     return 2 * asin(sqrt(a)) * 6371000
 
-with open('flood-map/bangladesh_border.geojson', 'r') as f: border_poly = shape(json.load(f)['features'][0]['geometry'])
-with open('flood-map/bangladesh_floods.geojson', 'r') as f: floods = json.load(f)['features']
-with open('bangladesh-map/schools.geojson', 'r') as f: schools = json.load(f)['features']
+with open('../data/bangladesh_border.geojson', 'r') as f: border_poly = shape(json.load(f)['features'][0]['geometry'])
+with open('../data/bangladesh_floods.geojson', 'r') as f: floods = json.load(f)['features']
+with open('../data/schools.geojson', 'r') as f: schools = json.load(f)['features']
 
 filtered_schools = []
 at_risk_schools = []
@@ -44,6 +44,6 @@ for s in schools:
                 at_risk_schools.append(s)
                 break
 
-with open('bangladesh-map/schools.geojson', 'w') as f: json.dump({"type": "FeatureCollection", "features": filtered_schools}, f)
-with open('bangladesh-map/at_risk_schools.geojson', 'w') as f: json.dump({"type": "FeatureCollection", "features": at_risk_schools}, f)
+with open('../data/schools.geojson', 'w') as f: json.dump({"type": "FeatureCollection", "features": filtered_schools}, f)
+with open('../data/at_risk_schools.geojson', 'w') as f: json.dump({"type": "FeatureCollection", "features": at_risk_schools}, f)
 print(f"Done: {len(filtered_schools)} schools in BD, {len(at_risk_schools)} at risk.")

@@ -14,10 +14,10 @@ def haversine(lon1, lat1, lon2, lat2):
     return c * r
 
 # 1. Load the datasets
-with open('flood-map/bangladesh_floods.geojson', 'r') as f:
+with open('../data/bangladesh_floods.geojson', 'r') as f:
     floods = json.load(f)['features']
 
-with open('bangladesh-map/health_facilities.geojson', 'r') as f:
+with open('../data/health_facilities.geojson', 'r') as f:
     health_sites = json.load(f)['features']
 
 # 2. Identify sites at risk (within 1km of any flood)
@@ -46,7 +46,7 @@ output = {
     "features": at_risk_sites
 }
 
-with open('bangladesh-map/at_risk_health_facilities.geojson', 'w') as f:
+with open('../data/at_risk_health_facilities.geojson', 'w') as f:
     json.dump(output, f, indent=2)
 
 print(f"Analysis complete! Found {len(at_risk_sites)} health sites within 1km of a flood event.")

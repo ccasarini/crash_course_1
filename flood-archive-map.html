@@ -8,26 +8,28 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
         :root { 
-            --primary: #000000; 
+            --primary: #0f172a; 
             --accent: #fef01e; 
-            --bg: #0b0b0b; 
-            --card-bg: #161616;
-            --text-main: #ffffff;
-            --text-muted: #a0a0a0;
-            --border: #262626;
+            --bg: #f8fafc; 
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --shelter-color: #f59e0b;
+            --health-color: #06b6d4;
         }
         body { font-family: 'Inter', sans-serif; margin: 0; background: var(--bg); color: var(--text-main); display: flex; flex-direction: column; height: 100vh; }
-        header { background: var(--primary); color: white; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; z-index: 1000; border-bottom: 1px solid var(--border); }
-        header h1 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-style: italic; margin: 0; }
+        header { background: white; color: var(--primary); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; z-index: 1000; border-bottom: 1px solid var(--border); }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-style: italic; margin: 0; color: var(--primary); }
         main { display: flex; flex: 1; overflow: hidden; }
-        #sidebar { width: 400px; background: var(--bg); border-right: 1px solid var(--border); padding: 2rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1.5rem; }
-        #map { flex: 1; cursor: crosshair; filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%); }
-        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 4px; padding: 1.5rem; }
-        .card h2 { font-family: 'Playfair Display', serif; font-size: 0.9rem; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0; letter-spacing: 0.1em; }
+        #sidebar { width: 400px; background: white; border-right: 1px solid var(--border); padding: 2rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1.5rem; }
+        #map { flex: 1; cursor: crosshair; }
+        .card { background: white; border: 1px solid var(--border); border-radius: 4px; padding: 1.5rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .card h2 { font-family: 'Playfair Display', serif; font-size: 0.9rem; text-transform: uppercase; color: var(--primary); margin: 0 0 1rem 0; letter-spacing: 0.1em; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
         
         .legend {
-            background: var(--card-bg);
-            color: white;
+            background: white;
+            color: var(--text-main);
             padding: 15px;
             border-radius: 4px;
             border: 1px solid var(--border);
@@ -35,20 +37,21 @@
             font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
         }
-        .legend h4 { font-family: 'Playfair Display', serif; margin: 0 0 10px 0; color: var(--accent); }
+        .legend h4 { font-family: 'Playfair Display', serif; margin: 0 0 10px 0; color: var(--primary); font-size: 0.9rem; }
         .legend i {
             width: 12px;
             height: 12px;
             float: left;
             margin-right: 10px;
-            opacity: 1;
+            opacity: 0.8;
         }
         .btn-focus {
             width: 100%;
             padding: 12px;
-            background: var(--accent);
-            color: black;
+            background: var(--primary);
+            color: white;
             border: none;
             border-radius: 2px;
             cursor: pointer;
@@ -59,22 +62,48 @@
             transition: all 0.3s;
         }
         .btn-focus:hover {
-            background: white;
+            background: var(--accent);
+            color: black;
             transform: translateY(-2px);
         }
+
+        /* Filter Toggle Styling */
+        .filter-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-radius: 4px;
+            background: #f1f5f9;
+            transition: background 0.2s;
+        }
+        .filter-item:hover { background: #e2e8f0; }
+        .toggle-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            flex: 1;
+        }
+        .indicator { width: 12px; height: 12px; border-radius: 50%; }
+
         #details-content { font-size: 0.85rem; }
         small { color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
-        strong { color: white; font-size: 1.1rem; }
+        strong { color: var(--primary); font-size: 1.1rem; }
     </style>
 </head>
 <body>
     <header>
         <h1>Bangladesh Flood Research</h1>
         <nav style="display: flex; gap: 2rem;">
-            <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Home</a>
-            <a href="analytics.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Analytics</a>
+            <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; transition: color 0.3s;">Home</a>
+            <a href="analytics.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; transition: color 0.3s;">Analytics</a>
         </nav>
-        <div style="font-size: 0.65rem; color: var(--accent); border: 1px solid var(--accent); padding: 4px 12px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Delineated Border View</div>
+        <div style="font-size: 0.65rem; color: var(--primary); border: 1px solid var(--primary); padding: 4px 12px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Live Border Data</div>
     </header>
     <main>
         <aside id="sidebar">
@@ -83,23 +112,29 @@
                 <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin: 0;">The solid line marks the <strong>political border</strong>. Markers represent historical events. Hover for info, click for statistics.</p>
             </div>
             
-            <div class="card" style="border-top: 2px solid var(--accent);">
+            <div class="card" style="border-left: 4px solid var(--accent);">
                 <h2>RFP Case Study</h2>
-                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Focusing on the Teesta River Basin vulnerability hotspots.</p>
-                <button onclick="focusTeesta()" class="btn-focus">Focus on Teesta Area</button>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Vulnerability hotspots in the Teesta River Basin.</p>
+                <button onclick="focusTeesta()" class="btn-focus">Focus on Teesta Basin</button>
             </div>
 
-            <div id="filter-card" class="card" style="display:none; border-top: 2px solid #10b981;">
-                <h2>Interactive Filters</h2>
-                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 5px;">
-                    <label style="font-size: 0.8rem; display: flex; align-items: center; gap: 10px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.05em;">
-                        <input type="checkbox" id="toggle-shelters" checked onchange="toggleShelters()" style="accent-color: #10b981;"> 
-                        Safe Hubs <span style="color: var(--text-muted); font-size: 0.7rem;">(Flood Shelters)</span>
-                    </label>
-                    <label style="font-size: 0.8rem; display: flex; align-items: center; gap: 10px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.05em;">
-                        <input type="checkbox" id="toggle-health" checked onchange="toggleHealth()" style="accent-color: #10b981;"> 
-                        Health Sites <span style="color: var(--text-muted); font-size: 0.7rem;">(Hospitals/Clinics)</span>
-                    </label>
+            <div id="filter-card" class="card" style="display:none; border-left: 4px solid var(--primary);">
+                <h2>Infrastructure Overlays</h2>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <div class="filter-item">
+                        <label class="toggle-label">
+                            <span class="indicator" style="background: var(--shelter-color);"></span>
+                            Safe Hubs
+                            <input type="checkbox" id="toggle-shelters" checked onchange="toggleShelters()" style="margin-left: auto;">
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <label class="toggle-label">
+                            <span class="indicator" style="background: var(--health-color);"></span>
+                            Health Sites
+                            <input type="checkbox" id="toggle-health" checked onchange="toggleHealth()" style="margin-left: auto;">
+                        </label>
+                    </div>
                 </div>
             </div>
 
@@ -202,14 +237,14 @@
         legend.onAdd = function (map) {
             var div = L.DomUtil.create('div', 'legend');
             div.innerHTML += '<h4>Flood Severity</h4>';
-            div.innerHTML += '<i style="background: #ef4444; width: 8px; height: 8px;"></i> Low<br>';
-            div.innerHTML += '<i style="background: #ef4444; width: 12px; height: 12px;"></i> Medium<br>';
-            div.innerHTML += '<i style="background: #ef4444; width: 16px; height: 12px;"></i> High<br>';
-            div.innerHTML += '<div style="margin-top:5px; padding-top:5px; border-top:1px solid #eee;">';
+            div.innerHTML += '<i style="background: #ef4444; border-radius: 50%; width: 8px; height: 8px;"></i> Low<br>';
+            div.innerHTML += '<i style="background: #ef4444; border-radius: 50%; width: 12px; height: 12px;"></i> Medium<br>';
+            div.innerHTML += '<i style="background: #ef4444; border-radius: 50%; width: 16px; height: 12px;"></i> High<br>';
+            div.innerHTML += '<div style="margin-top:10px; padding-top:10px; border-top:1px solid var(--border);">';
             div.innerHTML += '<i style="background: #3b82f6; width: 12px; height: 2px; border-radius: 0;"></i> Teesta River<br>';
-            div.innerHTML += '<i style="background: #3b82f6; width: 8px; height: 8px; opacity:0.5;"></i> Affected District<br>';
-            div.innerHTML += '<i style="background: #10b981; width: 10px; height: 10px; border: 1px solid white;"></i> Safe Hub<br>';
-            div.innerHTML += '<i style="background: #34d399; width: 10px; height: 10px; border-radius: 50%; border: 1px solid white;"></i> Health Site</div>';
+            div.innerHTML += '<i style="background: rgba(59, 130, 246, 0.2); width: 10px; height: 10px; border: 1px solid #3b82f6;"></i> Affected District<br>';
+            div.innerHTML += '<i style="background: var(--shelter-color); width: 10px; height: 10px; border: 1px solid white;"></i> Safe Hub<br>';
+            div.innerHTML += '<i style="background: var(--health-color); width: 10px; height: 10px; border-radius: 50%; border: 1px solid white;"></i> Health Site</div>';
             return div;
         };
         legend.addTo(map);
@@ -257,7 +292,7 @@
                         }).addTo(teestaGroup);
                     });
 
-                // Load Districts (Markers for now)
+                // Load Districts
                 fetch('data/teesta_districts.geojson')
                     .then(res => res.json())
                     .then(data => {
@@ -269,7 +304,7 @@
                                     color: "#fff",
                                     weight: 1,
                                     opacity: 1,
-                                    fillOpacity: 0.4
+                                    fillOpacity: 0.2
                                 }).bindTooltip(feature.properties.name, { permanent: true, direction: 'right', className: 'district-label' });
                             }
                         }).addTo(teestaGroup);
@@ -284,7 +319,7 @@
                                 return L.marker(latlng, {
                                     icon: L.divIcon({
                                         className: 'shelter-icon',
-                                        html: '<div style="background-color: #10b981; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white;"></div>',
+                                        html: `<div style="background-color: var(--shelter-color); width: 12px; height: 12px; border: 2px solid white;"></div>`,
                                         iconSize: [12, 12]
                                     })
                                 }).bindPopup(`<strong>Safe Hub: ${feature.properties.name || feature.properties['name:en'] || 'Unnamed Shelter'}</strong><br>Type: ${feature.properties.shelter_type || 'General'}`);
@@ -300,11 +335,11 @@
                             pointToLayer: function (feature, latlng) {
                                 return L.circleMarker(latlng, {
                                     radius: 4,
-                                    fillColor: "#34d399",
+                                    fillColor: "var(--health-color)",
                                     color: "#fff",
                                     weight: 1,
                                     opacity: 1,
-                                    fillOpacity: 0.8
+                                    fillOpacity: 0.9
                                 }).bindPopup(`<strong>Health Site: ${feature.properties.name || 'Unnamed Facility'}</strong><br>Type: ${feature.properties.amenity || 'Medical'}`);
                             }
                         }).addTo(teestaHealthLayer);

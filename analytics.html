@@ -4,13 +4,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
     <style>
         :root {
-            --primary: #000000; 
+            --primary: #0f172a; 
             --accent: #fef01e; 
-            --bg: #0b0b0b; 
-            --card-bg: #161616;
-            --text-main: #ffffff;
-            --text-muted: #a0a0a0;
-            --border: #262626;
+            --bg: #f8fafc; 
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
         }
 
         body {
@@ -23,7 +23,7 @@
         }
 
         header {
-            background: var(--primary);
+            background: white;
             padding: 1.5rem 2rem;
             border-bottom: 1px solid var(--border);
             display: flex;
@@ -39,6 +39,7 @@
             font-size: 1.25rem; 
             font-style: italic; 
             margin: 0; 
+            color: var(--primary);
         }
 
         .description { 
@@ -58,7 +59,7 @@
             letter-spacing: 0.1em; 
             transition: color 0.3s; 
         }
-        nav a:hover { color: var(--accent); }
+        nav a:hover { color: var(--primary); }
 
         .container {
             max-width: 1200px;
@@ -83,17 +84,21 @@
             padding: 2.5rem;
             display: flex;
             flex-direction: column;
-            transition: border-color 0.3s;
+            transition: all 0.3s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
 
-        .card:hover { border-color: var(--accent); }
+        .card:hover { 
+            border-color: var(--primary); 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
 
         .card h2 {
             font-family: 'Playfair Display', serif;
             font-size: 1.25rem;
             margin-top: 0;
             margin-bottom: 2rem;
-            color: var(--accent);
+            color: var(--primary);
             font-style: italic;
             border-bottom: 1px solid var(--border);
             padding-bottom: 1rem;
@@ -110,7 +115,7 @@
             font-size: 2rem;
             font-style: italic;
             padding: 100px;
-            color: var(--accent);
+            color: var(--primary);
         }
     </style>
 </head>
@@ -143,7 +148,7 @@
             <canvas id="chartYears"></canvas>
         </div>
 
-        <!-- Card 3: Events by Category -->
+        <!-- Card 3: Events by Cause -->
         <div class="card">
             <h2>Flood Events by Cause</h2>
             <canvas id="chartCategories"></canvas>
@@ -158,10 +163,10 @@
 </div>
 
 <script>
-    // Set global Chart.js defaults for the Lucy style
-    Chart.defaults.color = '#a0a0a0';
+    // Set global Chart.js defaults for the Light style
+    Chart.defaults.color = '#64748b';
     Chart.defaults.font.family = "'Inter', sans-serif";
-    Chart.defaults.borderColor = '#262626';
+    Chart.defaults.borderColor = '#e2e8f0';
 
     // 1. Fetch and Parse the CSV data
     Papa.parse("data/floodarchive_cleaned.txt", {
@@ -215,10 +220,10 @@
         document.getElementById('loading').style.display = 'none';
         document.getElementById('dashboard').style.display = 'grid';
 
-        // --- Render Charts with Lucy Neon Accent ---
+        // --- Render Charts with Modern Colors ---
         createBarChart('chartCountries', 'Total Fatalities', sortedDeadYears.map(x => x[0]), sortedDeadYears.map(x => x[1]), '#ef4444');
-        createLineChart('chartYears', 'Flood Events', sortedYears.map(x => x[0]), sortedYears.map(x => x[1]), '#fef01e');
-        createBarChart('chartCategories', 'Events by Cause', Object.keys(categoryCounts), Object.values(categoryCounts), '#fef01e');
+        createLineChart('chartYears', 'Flood Events', sortedYears.map(x => x[0]), sortedYears.map(x => x[1]), '#0f172a');
+        createBarChart('chartCategories', 'Events by Cause', Object.keys(categoryCounts), Object.values(categoryCounts), '#f59e0b');
         createBarChart('chartSeverity', 'Total Displaced', sortedSeverity.map(x => "Level " + x[0]), sortedSeverity.map(x => x[1]), '#3b82f6');
     }
 
@@ -240,17 +245,19 @@
                 plugins: { 
                     legend: { display: false },
                     tooltip: {
-                        backgroundColor: '#161616',
+                        backgroundColor: '#ffffff',
+                        titleColor: '#0f172a',
+                        bodyColor: '#64748b',
                         titleFont: { family: 'Playfair Display' },
                         bodyFont: { family: 'Inter' },
-                        borderColor: '#fef01e',
+                        borderColor: '#e2e8f0',
                         borderWidth: 1
                     }
                 },
                 scales: { 
                     y: { 
                         beginAtZero: true,
-                        grid: { color: '#262626' }
+                        grid: { color: '#f1f5f9' }
                     },
                     x: {
                         grid: { display: false }
@@ -284,15 +291,17 @@
                 plugins: { 
                     legend: { display: false },
                     tooltip: {
-                        backgroundColor: '#161616',
-                        borderColor: '#fef01e',
+                        backgroundColor: '#ffffff',
+                        titleColor: '#0f172a',
+                        bodyColor: '#64748b',
+                        borderColor: '#e2e8f0',
                         borderWidth: 1
                     }
                 },
                 scales: { 
                     y: { 
                         beginAtZero: true,
-                        grid: { color: '#262626' }
+                        grid: { color: '#f1f5f9' }
                     },
                     x: {
                         grid: { display: false }

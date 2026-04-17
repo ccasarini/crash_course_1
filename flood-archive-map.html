@@ -121,8 +121,7 @@
             attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
         }).addTo(map);
 
-        // 1. ADD BORDER LAYER
- (NON-INTERACTIVE SO IT DOES NOT BLOCK CLICKS)
+        // 1. ADD BORDER LAYER (NON-INTERACTIVE SO IT DOES NOT BLOCK CLICKS)
         fetch('data/bangladesh_border.geojson')
             .then(res => res.json())
             .then(borderData => {

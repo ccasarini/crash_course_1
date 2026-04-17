@@ -68,28 +68,46 @@
         }
 
         /* Filter Toggle Styling */
-        .filter-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-            border-radius: 4px;
-            background: #f1f5f9;
-            transition: background 0.2s;
+        .filter-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
         }
-        .filter-item:hover { background: #e2e8f0; }
-        .toggle-label {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 0.75rem;
+        .filter-btn {
+            padding: 12px 8px;
+            border-radius: 2px;
+            border: 1px solid var(--border);
+            background: #f1f5f9;
+            color: var(--text-muted);
+            font-size: 0.65rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.1em;
             cursor: pointer;
-            flex: 1;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
         }
-        .indicator { width: 12px; height: 12px; border-radius: 50%; }
+        .filter-btn.active-shelter {
+            background: var(--shelter-color);
+            color: white;
+            border-color: var(--shelter-color);
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+        }
+        .filter-btn.active-health {
+            background: var(--health-color);
+            color: white;
+            border-color: var(--health-color);
+            box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+        }
+        .filter-btn i {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: currentColor;
+        }
 
         #details-content { font-size: 0.85rem; }
         small { color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
@@ -120,21 +138,13 @@
 
             <div id="filter-card" class="card" style="display:none; border-left: 4px solid var(--primary);">
                 <h2>Infrastructure Overlays</h2>
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                    <div class="filter-item">
-                        <label class="toggle-label">
-                            <span class="indicator" style="background: var(--shelter-color);"></span>
-                            Safe Hubs
-                            <input type="checkbox" id="toggle-shelters" checked onchange="toggleShelters()" style="margin-left: auto;">
-                        </label>
-                    </div>
-                    <div class="filter-item">
-                        <label class="toggle-label">
-                            <span class="indicator" style="background: var(--health-color);"></span>
-                            Health Sites
-                            <input type="checkbox" id="toggle-health" checked onchange="toggleHealth()" style="margin-left: auto;">
-                        </label>
-                    </div>
+                <div class="filter-grid">
+                    <button id="btn-shelters" class="filter-btn active-shelter" onclick="toggleShelters()">
+                        <i></i> Safe Hubs
+                    </button>
+                    <button id="btn-health" class="filter-btn active-health" onclick="toggleHealth()">
+                        <i></i> Health Sites
+                    </button>
                 </div>
             </div>
 
@@ -255,20 +265,24 @@
         var teestaHealthLayer = L.layerGroup().addTo(map);
 
         function toggleShelters() {
-            var checkbox = document.getElementById('toggle-shelters');
-            if (checkbox.checked) {
-                map.addLayer(teestaShelterLayer);
-            } else {
+            var btn = document.getElementById('btn-shelters');
+            if (map.hasLayer(teestaShelterLayer)) {
                 map.removeLayer(teestaShelterLayer);
+                btn.classList.remove('active-shelter');
+            } else {
+                map.addLayer(teestaShelterLayer);
+                btn.classList.add('active-shelter');
             }
         }
 
         function toggleHealth() {
-            var checkbox = document.getElementById('toggle-health');
-            if (checkbox.checked) {
-                map.addLayer(teestaHealthLayer);
-            } else {
+            var btn = document.getElementById('btn-health');
+            if (map.hasLayer(teestaHealthLayer)) {
                 map.removeLayer(teestaHealthLayer);
+                btn.classList.remove('active-health');
+            } else {
+                map.addLayer(teestaHealthLayer);
+                btn.classList.add('active-health');
             }
         }
 

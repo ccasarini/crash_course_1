@@ -1,127 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flood Archive Analytics</title>
-    <!-- Simple, clean font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Chart.js for the charts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Papa Parse for reading the CSV data -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
     <style>
         :root {
-            --bg-color: #f1f5f9;
-            --card-bg: #ffffff;
-            --text-main: #1e293b;
-            --text-muted: #64748b;
-            --accent: #3b82f6;
+            --primary: #000000; 
+            --accent: #fef01e; 
+            --bg: #0b0b0b; 
+            --card-bg: #161616;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --border: #262626;
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
+            background-color: var(--bg);
             color: var(--text-main);
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            line-height: 1.6;
         }
 
         header {
-            max-width: 1200px;
-            margin: 0 auto 30px auto;
-            text-align: center;
+            background: var(--primary);
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
-        h1 { margin-bottom: 10px; }
-        .description { color: var(--text-muted); font-size: 0.9rem; }
+        header h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 1.25rem; 
+            font-style: italic; 
+            margin: 0; 
+        }
+
+        .description { 
+            color: var(--text-muted); 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            letter-spacing: 0.05em;
+        }
+
+        nav { display: flex; gap: 2rem; }
+        nav a { 
+            color: var(--text-muted); 
+            text-decoration: none; 
+            font-size: 0.75rem; 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            letter-spacing: 0.1em; 
+            transition: color 0.3s; 
+        }
+        nav a:hover { color: var(--accent); }
+
+        .container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
 
         .dashboard {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            gap: 2.5rem;
         }
 
-        /* Responsive adjustment for small screens */
         @media (max-width: 600px) {
             .dashboard { grid-template-columns: 1fr; }
         }
 
         .card {
             background: var(--card-bg);
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 2.5rem;
             display: flex;
             flex-direction: column;
+            transition: border-color 0.3s;
         }
 
+        .card:hover { border-color: var(--accent); }
+
         .card h2 {
-            font-size: 1.1rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
             margin-top: 0;
-            margin-bottom: 20px;
-            color: var(--text-muted);
-            border-bottom: 1px solid #f1f5f9;
-            padding-bottom: 10px;
+            margin-bottom: 2rem;
+            color: var(--accent);
+            font-style: italic;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
         }
 
         canvas {
             width: 100% !important;
-            height: 300px !important;
+            height: 320px !important;
         }
 
         .loading {
             text-align: center;
-            font-size: 1.5rem;
-            padding: 50px;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-style: italic;
+            padding: 100px;
+            color: var(--accent);
         }
     </style>
 </head>
 <body>
 
-<header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #fff; border-bottom: 1px solid #e2e8f0; margin-bottom: 2rem;">
+<header>
     <div>
-        <h1 style="margin: 0; font-size: 1.5rem;">Flood Archive Analytics</h1>
-        <p class="description" style="margin: 0; font-size: 0.9rem;">Visualizing major flood events in Bangladesh (1985-2024)</p>
+        <h1>Flood Archive Analytics</h1>
+        <p class="description">Visualizing historical flood patterns (1985-2024)</p>
     </div>
-    <nav style="display: flex; gap: 1.5rem;">
-        <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600;">Home</a>
-        <a href="flood-archive-map.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600;">Flood Map</a>
-        <a href="infrastructure-map.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600;">Infra Map</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="flood-archive-map.html">Flood Map</a>
+        <a href="infrastructure-map.html">Infra Map</a>
     </nav>
 </header>
 
-<div id="loading" class="loading">Loading data and generating charts...</div>
+<div class="container">
+    <div id="loading" class="loading">Generating research data...</div>
 
-<div class="dashboard" id="dashboard" style="display: none;">
-    <!-- Card 1: Fatalities per Year -->
-    <div class="card">
-        <h2>Total Fatalities per Year</h2>
-        <canvas id="chartCountries"></canvas>
-    </div>
+    <div class="dashboard" id="dashboard" style="display: none;">
+        <!-- Card 1: Fatalities per Year -->
+        <div class="card">
+            <h2>Total Fatalities per Year</h2>
+            <canvas id="chartCountries"></canvas>
+        </div>
 
-    <!-- Card 2: Events per Year -->
-    <div class="card">
-        <h2>Flood Events per Year</h2>
-        <canvas id="chartYears"></canvas>
-    </div>
+        <!-- Card 2: Events per Year -->
+        <div class="card">
+            <h2>Flood Events per Year</h2>
+            <canvas id="chartYears"></canvas>
+        </div>
 
-    <!-- Card 3: Events by Category -->
-    <div class="card">
-        <h2>Flood Events by Cause</h2>
-        <canvas id="chartCategories"></canvas>
-    </div>
+        <!-- Card 3: Events by Category -->
+        <div class="card">
+            <h2>Flood Events by Cause</h2>
+            <canvas id="chartCategories"></canvas>
+        </div>
 
-    <!-- Card 4: Displaced by Severity -->
-    <div class="card">
-        <h2>Total Displaced People by Severity</h2>
-        <canvas id="chartSeverity"></canvas>
+        <!-- Card 4: Displaced by Severity -->
+        <div class="card">
+            <h2>Total Displaced People by Severity</h2>
+            <canvas id="chartSeverity"></canvas>
+        </div>
     </div>
 </div>
 
 <script>
+    // Set global Chart.js defaults for the Lucy style
+    Chart.defaults.color = '#a0a0a0';
+    Chart.defaults.font.family = "'Inter', sans-serif";
+    Chart.defaults.borderColor = '#262626';
+
     // 1. Fetch and Parse the CSV data
     Papa.parse("data/floodarchive_cleaned.txt", {
         download: true,
@@ -174,10 +216,10 @@
         document.getElementById('loading').style.display = 'none';
         document.getElementById('dashboard').style.display = 'grid';
 
-        // --- Render Charts ---
+        // --- Render Charts with Lucy Neon Accent ---
         createBarChart('chartCountries', 'Total Fatalities', sortedDeadYears.map(x => x[0]), sortedDeadYears.map(x => x[1]), '#ef4444');
-        createLineChart('chartYears', 'Flood Events', sortedYears.map(x => x[0]), sortedYears.map(x => x[1]), '#10b981');
-        createBarChart('chartCategories', 'Events by Cause', Object.keys(categoryCounts), Object.values(categoryCounts), '#f59e0b');
+        createLineChart('chartYears', 'Flood Events', sortedYears.map(x => x[0]), sortedYears.map(x => x[1]), '#fef01e');
+        createBarChart('chartCategories', 'Events by Cause', Object.keys(categoryCounts), Object.values(categoryCounts), '#fef01e');
         createBarChart('chartSeverity', 'Total Displaced', sortedSeverity.map(x => "Level " + x[0]), sortedSeverity.map(x => x[1]), '#3b82f6');
     }
 
@@ -190,14 +232,31 @@
                     label: label,
                     data: data,
                     backgroundColor: color,
-                    borderRadius: 4
+                    borderRadius: 2
                 }]
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                plugins: { legend: { display: false } },
-                scales: { y: { beginAtZero: true } }
+                plugins: { 
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#161616',
+                        titleFont: { family: 'Playfair Display' },
+                        bodyFont: { family: 'Inter' },
+                        borderColor: '#fef01e',
+                        borderWidth: 1
+                    }
+                },
+                scales: { 
+                    y: { 
+                        beginAtZero: true,
+                        grid: { color: '#262626' }
+                    },
+                    x: {
+                        grid: { display: false }
+                    }
+                }
             }
         });
     }
@@ -211,16 +270,35 @@
                     label: label,
                     data: data,
                     borderColor: color,
-                    backgroundColor: color + '33', // Add transparency
+                    borderWidth: 3,
+                    pointBackgroundColor: color,
+                    pointRadius: 0,
+                    pointHoverRadius: 6,
+                    backgroundColor: color + '11', 
                     fill: true,
-                    tension: 0.3
+                    tension: 0.4
                 }]
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                plugins: { legend: { display: false } },
-                scales: { y: { beginAtZero: true } }
+                plugins: { 
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#161616',
+                        borderColor: '#fef01e',
+                        borderWidth: 1
+                    }
+                },
+                scales: { 
+                    y: { 
+                        beginAtZero: true,
+                        grid: { color: '#262626' }
+                    },
+                    x: {
+                        grid: { display: false }
+                    }
+                }
             }
         });
     }

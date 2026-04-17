@@ -4,72 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bangladesh Flood & Migration Archive</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
-        :root { --primary: #0f172a; --accent: #3b82f6; --danger: #ef4444; --bg: #f8fafc; }
-        body { font-family: 'Inter', sans-serif; margin: 0; background: var(--bg); display: flex; flex-direction: column; height: 100vh; }
-        header { background: var(--primary); color: white; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; z-index: 1000; }
+        :root { 
+            --primary: #000000; 
+            --accent: #fef01e; 
+            --bg: #0b0b0b; 
+            --card-bg: #161616;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --border: #262626;
+        }
+        body { font-family: 'Inter', sans-serif; margin: 0; background: var(--bg); color: var(--text-main); display: flex; flex-direction: column; height: 100vh; }
+        header { background: var(--primary); color: white; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; z-index: 1000; border-bottom: 1px solid var(--border); }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-style: italic; margin: 0; }
         main { display: flex; flex: 1; overflow: hidden; }
-        #sidebar { width: 380px; background: white; border-right: 1px solid #e2e8f0; padding: 1.5rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem; }
-        #map { flex: 1; cursor: crosshair; }
-        .card { background: white; border: 1px solid #f1f5f9; border-radius: 12px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .card h2 { font-size: 0.75rem; text-transform: uppercase; color: #64748b; margin: 0 0 0.5rem 0; }
+        #sidebar { width: 400px; background: var(--bg); border-right: 1px solid var(--border); padding: 2rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1.5rem; }
+        #map { flex: 1; cursor: crosshair; filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%); }
+        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 4px; padding: 1.5rem; }
+        .card h2 { font-family: 'Playfair Display', serif; font-size: 0.9rem; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0; letter-spacing: 0.1em; }
         
-        .migration-line {
-            stroke-dasharray: 10, 10;
-            animation: dash 1s linear infinite;
-        }
-        @keyframes dash {
-            to { stroke-dashoffset: -20; }
-        }
         .legend {
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 1px 5px rgba(0,0,0,0.2);
-            line-height: 1.5;
+            background: var(--card-bg);
+            color: white;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            line-height: 1.6;
             font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
+        .legend h4 { font-family: 'Playfair Display', serif; margin: 0 0 10px 0; color: var(--accent); }
         .legend i {
             width: 12px;
             height: 12px;
             float: left;
-            margin-right: 8px;
-            opacity: 0.8;
-            border-radius: 50%;
+            margin-right: 10px;
+            opacity: 1;
         }
+        .btn-focus {
+            width: 100%;
+            padding: 12px;
+            background: var(--accent);
+            color: black;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+            transition: all 0.3s;
+        }
+        .btn-focus:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+        #details-content { font-size: 0.85rem; }
+        small { color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+        strong { color: white; font-size: 1.1rem; }
     </style>
 </head>
 <body>
     <header>
         <h1>Bangladesh Flood Research</h1>
-        <nav style="display: flex; gap: 1.5rem;">
-            <a href="index.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 500;">Home</a>
-            <a href="infrastructure-map.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 500;">Infra Map</a>
-            <a href="analytics.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 500;">Analytics</a>
+        <nav style="display: flex; gap: 2rem;">
+            <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Home</a>
+            <a href="infrastructure-map.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Infra Map</a>
+            <a href="analytics.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Analytics</a>
         </nav>
-        <div style="font-size: 0.75rem; background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 20px;">Delineated Border View</div>
+        <div style="font-size: 0.65rem; color: var(--accent); border: 1px solid var(--accent); padding: 4px 12px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Delineated Border View</div>
     </header>
     <main>
         <aside id="sidebar">
             <div class="card">
                 <h2>Research Context</h2>
-                <p style="font-size: 0.85rem; line-height: 1.4; margin: 0;">The solid line marks the <strong>detailed political border</strong> of Bangladesh. Markers represent historical flood events. Hover for quick info, click for full simulation.</p>
+                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin: 0;">The solid line marks the <strong>political border</strong>. Markers represent historical events. Hover for info, click for statistics.</p>
             </div>
             
-            <div class="card" style="border-left: 4px solid #3b82f6;">
+            <div class="card" style="border-top: 2px solid var(--accent);">
                 <h2>RFP Case Study</h2>
-                <p style="font-size: 0.85rem; margin-bottom: 10px;">Teesta River Basin focus area.</p>
-                <button onclick="focusTeesta()" style="width: 100%; padding: 10px; background: #3b82f6; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; font-family: 'Inter';">Focus on Teesta Area</button>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Focusing on the Teesta River Basin vulnerability hotspots.</p>
+                <button onclick="focusTeesta()" class="btn-focus">Focus on Teesta Area</button>
             </div>
 
-            <div id="filter-card" class="card" style="display:none; border-left: 4px solid #10b981;">
+            <div id="filter-card" class="card" style="display:none; border-top: 2px solid #10b981;">
                 <h2>Interactive Filters</h2>
-                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 5px;">
-                    <label style="font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
-                        <input type="checkbox" id="toggle-shelters" checked onchange="toggleShelters()"> 
-                        <strong>Safe Hubs</strong> (Flood Shelters)
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 5px;">
+                    <label style="font-size: 0.8rem; display: flex; align-items: center; gap: 10px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.05em;">
+                        <input type="checkbox" id="toggle-shelters" checked onchange="toggleShelters()" style="accent-color: #10b981;"> 
+                        Safe Hubs <span style="color: var(--text-muted); font-size: 0.7rem;">(Flood Shelters)</span>
                     </label>
                 </div>
             </div>
@@ -78,7 +104,7 @@
                 <h2>Event Stats</h2>
                 <div id="details-content"></div>
             </div>
-            <div style="font-size: 0.8rem; color: #94a3b8; text-align: center;">Click any <strong>Red Circle</strong> inside the border to trigger the migration simulation.</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted); text-align: center; text-transform: uppercase; letter-spacing: 0.05em;">Click any <strong>Red Circle</strong> to view detailed flood event statistics.</div>
         </aside>
         <div id="map"></div>
     </main>
@@ -92,9 +118,8 @@
             attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
         }).addTo(map);
 
-        const DHAKA = [23.8103, 90.4125];
-
-        // 1. ADD BORDER LAYER (NON-INTERACTIVE SO IT DOES NOT BLOCK CLICKS)
+        // 1. ADD BORDER LAYER
+ (NON-INTERACTIVE SO IT DOES NOT BLOCK CLICKS)
         fetch('data/bangladesh_border.geojson')
             .then(res => res.json())
             .then(borderData => {
@@ -152,18 +177,6 @@
                                 </div>
                                 <p style="font-size: 0.8rem; color: #64748b; margin-top: 10px;">Cause: ${props.cause}${isInside ? "" : "<br><span style='color:#f59e0b;'>⚠️ Recorded outside political border</span>"}</p>
                             `;
-
-                            // Trigger Migration Line
-                            var floodPos = [feature.geometry.coordinates[1], feature.geometry.coordinates[0]];
-                            var line = L.polyline([floodPos, DHAKA], {
-                                color: '#3b82f6',
-                                weight: 3,
-                                opacity: 0.8,
-                                className: 'migration-line'
-                            }).addTo(map);
-
-                            // Clean up
-                            setTimeout(() => { if(map.hasLayer(line)) map.removeLayer(line); }, 3000);
                         });
                     },
                     pointToLayer: function (feature, latlng) {

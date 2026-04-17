@@ -57,6 +57,13 @@
                 <h2>Research Context</h2>
                 <p style="font-size: 0.85rem; line-height: 1.4; margin: 0;">The solid line marks the <strong>detailed political border</strong> of Bangladesh. Markers represent historical flood events. Hover for quick info, click for full simulation.</p>
             </div>
+            
+            <div class="card" style="border-left: 4px solid #3b82f6;">
+                <h2>RFP Case Study</h2>
+                <p style="font-size: 0.85rem; margin-bottom: 10px;">Teesta River Basin focus area.</p>
+                <button onclick="focusTeesta()" style="width: 100%; padding: 10px; background: #3b82f6; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; font-family: 'Inter';">Focus on Teesta Area</button>
+            </div>
+
             <div id="event-card" class="card" style="display:none;">
                 <h2>Event Stats</h2>
                 <div id="details-content"></div>
@@ -173,9 +180,52 @@
             div.innerHTML += '<i style="background: #ef4444; width: 8px; height: 8px;"></i> Low<br>';
             div.innerHTML += '<i style="background: #ef4444; width: 12px; height: 12px;"></i> Medium<br>';
             div.innerHTML += '<i style="background: #ef4444; width: 16px; height: 12px;"></i> High<br>';
+            div.innerHTML += '<div style="margin-top:5px; padding-top:5px; border-top:1px solid #eee;">';
+            div.innerHTML += '<i style="background: #3b82f6; width: 12px; height: 2px; border-radius: 0;"></i> Teesta River<br>';
+            div.innerHTML += '<i style="background: #3b82f6; width: 8px; height: 8px; opacity:0.5;"></i> Affected District</div>';
             return div;
         };
         legend.addTo(map);
+
+        // 4. TEESTA SPECIFIC LOGIC
+        var teestaGroup = L.layerGroup().addTo(map);
+
+        function focusTeesta() {
+            // Teesta area coordinates
+            map.flyTo([25.8, 89.2], 9, {
+                duration: 1.5
+            });
+            
+            // Highlight the river and districts
+            if (teestaGroup.getLayers().length === 0) {
+                // Load River
+                fetch('data/teesta_river.geojson')
+                    .then(res => res.json())
+                    .then(data => {
+                        L.geoJSON(data, {
+                            style: { color: "#3b82f6", weight: 4, opacity: 0.8 }
+                        }).addTo(teestaGroup);
+                    });
+
+                // Load Districts (Markers for now)
+                fetch('data/teesta_districts.geojson')
+                    .then(res => res.json())
+                    .then(data => {
+                        L.geoJSON(data, {
+                            pointToLayer: function (feature, latlng) {
+                                return L.circleMarker(latlng, {
+                                    radius: 6,
+                                    fillColor: "#3b82f6",
+                                    color: "#fff",
+                                    weight: 1,
+                                    opacity: 1,
+                                    fillOpacity: 0.4
+                                }).bindTooltip(feature.properties.name, { permanent: true, direction: 'right', className: 'district-label' });
+                            }
+                        }).addTo(teestaGroup);
+                    });
+            }
+        }
     </script>
 </body>
 </html>

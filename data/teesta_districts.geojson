@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Lalmonirhat" },
+      "geometry": { "type": "Point", "coordinates": [89.4471, 25.9125] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Nilphamari" },
+      "geometry": { "type": "Point", "coordinates": [88.8416, 25.9317] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Gaibandha" },
+      "geometry": { "type": "Point", "coordinates": [89.5447, 25.3287] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Kurigram" },
+      "geometry": { "type": "Point", "coordinates": [89.6504, 25.8072] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Rangpur" },
+      "geometry": { "type": "Point", "coordinates": [89.2508, 25.7439] }
+    }
+  ]
+}

@@ -1,0 +1,3393 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2315591,
+          25.7670137
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Rangpur Medial College Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.6451388,
+          25.8083678
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Kurigram General Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.5189417,
+          25.564414
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Sundarganj Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.5376381,
+          25.3272548
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Gaibandha General Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.4559009,
+          25.9198854
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Lalmonirhat General Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.4689775,
+          25.3894271
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Sadullahpur Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.6602718,
+          25.5812943
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Chilmari Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.0819612,
+          25.4180151
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Nawabganj Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.765778,
+          25.3646528
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Char Rajibpur Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.0124068,
+          25.2866264
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hakimpur Upazila Health Complex",
+        "name:en": "Hakimpur Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9482671,
+          25.5021795
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Phulbari Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.0818059,
+          25.4186693
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Nawabganj Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5573101,
+          26.3392356
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Panchagarh General Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5532585,
+          26.2034807
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Boda Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6371367,
+          25.6256582
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Dinajpur General Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.606676,
+          25.7937281
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Kaharole Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.0128047,
+          25.8994086
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "\u0995\u09bf\u09b6\u09cb\u09b0\u0997\u099e\u09cd\u099c \u0989\u09aa\u099c\u09c7\u09b2\u09be \u09b8\u09cd\u09ac\u09be\u09b8\u09cd\u09a5\u09cd\u09af \u0995\u09ae\u09aa\u09cd\u09b2\u09c7\u0995\u09cd\u09b8",
+        "name:en": "Kishoreganj Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8453772,
+          25.9306735
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Nilphamari General Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.7560236,
+          26.1162244
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Debiganj Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.638255,
+          25.6266021
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Institute of Nuclear Medicine and Allied Sciences"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2746865,
+          26.0244404
+        ]
+      },
+      "properties": {
+        "amenity": "clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.289505,
+          26.0139741
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "name": "Community Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2689091,
+          26.0264424
+        ]
+      },
+      "properties": {
+        "amenity": "clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9249713,
+          26.1563388
+        ]
+      },
+      "properties": {
+        "addr:city": "Dimla",
+        "addr:postcode": "5350",
+        "amenity": "hospital",
+        "emergency": "no",
+        "name": "\u09a1\u09bf\u09ae\u09b2\u09be \u0989\u09aa\u099c\u09c7\u09b2\u09be \u09b8\u09cd\u09ac\u09be\u09b8\u09cd\u09a5\u09cd\u09af \u0995\u09ae\u09aa\u09cd\u09b2\u09c7\u0995\u09cd\u09b8",
+        "name:bn": "\u09a1\u09bf\u09ae\u09b2\u09be \u0989\u09aa\u099c\u09c7\u09b2\u09be \u09b8\u09cd\u09ac\u09be\u09b8\u09cd\u09a5\u09cd\u09af \u0995\u09ae\u09aa\u09cd\u09b2\u09c7\u0995\u09cd\u09b8",
+        "name:en": "Dimla Upazila Health Complex",
+        "operator": "Government",
+        "phone": "+8801730324683"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2907846,
+          25.7350465
+        ]
+      },
+      "properties": {
+        "amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.231921,
+          25.7641337
+        ]
+      },
+      "properties": {
+        "addr:street": "Shohid Mukter Elahi Shorony",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name:en": "JC vaban"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2328921,
+          25.7638701
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "name": "Sondhany Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2517356,
+          25.7534136
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "name": "Standard Dental Lab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2316225,
+          25.7644887
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Star Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9899646,
+          25.3966505
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Rayhan Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.7683315,
+          25.8000261
+        ]
+      },
+      "properties": {
+        "amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.7483558,
+          26.0057391
+        ]
+      },
+      "properties": {
+        "amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.0310069,
+          25.8107123
+        ]
+      },
+      "properties": {
+        "addr:postcode": "5420",
+        "addr:street": "Dhaka - Dinajpur Highway",
+        "amenity": "hospital",
+        "name:en": "Taraganj Upazila Health Complex",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.7278684,
+          25.4548951
+        ]
+      },
+      "properties": {
+        "addr:district": "kurigram",
+        "addr:union": "mohongonj",
+        "addr:ward": "2",
+        "amenity": "clinic",
+        "damage": "Yes",
+        "damage_date": "2017",
+        "damage_description": "Mudslide.damage 50%",
+        "description": "Institution",
+        "name": "Panjerpara Friendship Satellite Clinic",
+        "source": "survey",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.7237499,
+          25.4437602
+        ]
+      },
+      "properties": {
+        "addr:district": "kurigram",
+        "addr:union": "mohongonj",
+        "addr:ward": "2",
+        "amenity": "clinic",
+        "description": "Physical Infrastructure",
+        "name": "Sikarpur Ftiendship Matriseba Counseling Center",
+        "source": "survey",
+        "source:link": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "source:name": "logic_undp",
+        "source_date": "2018-07-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.7774115,
+          25.4154443
+        ]
+      },
+      "properties": {
+        "addr:ward": "6",
+        "amenity": "clinic",
+        "description": "Patadhowa Para",
+        "name": "Community Clinic",
+        "source": "survey",
+        "source:link": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "source:name": "logic_undp",
+        "source_date": "2018-07-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.7681458,
+          25.4041762
+        ]
+      },
+      "properties": {
+        "addr:district": "kurigram",
+        "addr:union": "mohongonj",
+        "addr:ward": "Notun Bazar Noyar Char 6 No",
+        "amenity": "clinic",
+        "damage": "Yes",
+        "damage_date": "2017.0",
+        "damage_description": "Union Parishad was damaged",
+        "description": "Union",
+        "name": "Mohongonj Upozilla Clinic",
+        "source": "survey",
+        "source:link": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "source:name": "logic_undp",
+        "source_date": "2018-07-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.7702366,
+          25.5091331
+        ]
+      },
+      "properties": {
+        "addr:district": "Kurigram",
+        "addr:union": "Kodal Kathi",
+        "amenity": "clinic",
+        "damage": "yes",
+        "description": "floor 10 percent _ wall 5 percent, bonnay Voboner 1 5 inche toliye jay ebong brishtir pani te vobon tir owal vije jay",
+        "name": "Uttar Chor Sajai Mandalpara Community Clinic ( \u0989\u09a4\u09cd\u09a4\u09b0 \u099a\u09b0 \u09b8\u09be\u099c\u09be\u0987 \u09ae\u09a3\u09cd\u09a1\u09b2\u09aa\u09be\u09a1\u09bc\u09be \u0995\u09ae\u09bf\u0989\u09a8\u09bf\u099f\u09bf \u0995\u09cd\u09b2\u09bf\u09a8\u09bf\u0995 )",
+        "source": "survey",
+        "source:date": "2018-11-05",
+        "source:name": "logic_undp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.674809,
+          25.6319432
+        ]
+      },
+      "properties": {
+        "addr:district": "Kurigram",
+        "addr:union": "Raniganj",
+        "addr:ward": "5 no word sorkari gram",
+        "amenity": "clinic",
+        "damage": "no",
+        "name": "Sastho and Paribar Kendro",
+        "source": "survey",
+        "source:date": "2018-07-12",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Institutional"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9067916,
+          26.2114329
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "\u09a6\u0995\u09cd\u09b7\u09bf\u09a3 \u09ac\u09be\u09b2\u09be\u09aa\u09be\u09dc\u09be \u0995\u09ae\u09bf\u0989\u09a8\u09bf\u099f\u09bf \u0995\u09cd\u09b2\u09bf\u09a8\u09bf\u0995",
+        "name:en": "Dakshin Balapara Community Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6548118,
+          25.6128208
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name:en": "Human care Diagnostic center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6557696,
+          25.8632453
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name:en": "Haque Diagnostic Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.6843737,
+          25.4711058
+        ]
+      },
+      "properties": {
+        "addr:district": "Kurigram",
+        "addr:union": "Astomir Char",
+        "addr:ward": "9",
+        "amenity": "clinic",
+        "description": "Khamar Bash Patari Community Clinic- pucca, length: 15 feet, width : 10 feet",
+        "name": "Community Clinic",
+        "source": "servey",
+        "source:date": "2018-07-12",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6551191,
+          25.6093137
+        ]
+      },
+      "properties": {
+        "amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9918818,
+          25.2792681
+        ]
+      },
+      "properties": {
+        "addr:district": "Dakhshin Dinajpur",
+        "addr:full": "Near Hili B.D.O. Office, Hili, Purba Rainagar",
+        "addr:postcode": "733126",
+        "addr:state": "West Bengal",
+        "addr:subdistrict": "Hilli",
+        "amenity": "hospital",
+        "name": "Hili Rural Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.907731,
+          26.3599411
+        ]
+      },
+      "properties": {
+        "addr:district": "Cooch Behar",
+        "addr:full": "Uttarpara Road, Opp. Electricity Office, Mekhliganj",
+        "addr:postcode": "735304",
+        "addr:state": "West Bengal",
+        "amenity": "hospital",
+        "description": "Sub-District Hospital",
+        "healthcare": "hospital",
+        "name": "Mekhliganj Sub Divisional Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9937418,
+          25.3931068
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "America Australia Bangladesh Friendship Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9886865,
+          25.3852995
+        ]
+      },
+      "properties": {
+        "amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.6895087,
+          25.9647602
+        ]
+      },
+      "properties": {
+        "addr:city": "Nageswari,Kurigram",
+        "addr:housenumber": "04 no. word",
+        "addr:postcode": "5660",
+        "addr:street": "Nageswari to Newashi Road",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general;clinic",
+        "name": "Nageswari Upazila Health Complex",
+        "operator": "Bangladesh Government",
+        "operator:type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8595025,
+          25.9306588
+        ]
+      },
+      "properties": {
+        "addr:city": "Nilphamari",
+        "addr:street": "Dewan Alamgir Marshal Sarani",
+        "amenity": "hospital",
+        "health_facility:type": "office",
+        "healthcare": "hospital",
+        "name": "Nilphamari Diabetes Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8511916,
+          25.9360085
+        ]
+      },
+      "properties": {
+        "addr:city": "Nilphamari",
+        "addr:street": "\u09a8\u09c0\u09b2\u09ab\u09be\u09ae\u09be\u09b0\u09c0 - \u09a1\u09cb\u09ae\u09be\u09b0 \u09ae\u09b9\u09be\u09b8\u09a1\u09bc\u0995",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Nagorik Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6293333,
+          25.6284712
+        ]
+      },
+      "properties": {
+        "addr:city": "Dinajpur",
+        "addr:housenumber": "Life Care Hospital, Paharpur, Dinajpur Sadar",
+        "addr:postcode": "5200",
+        "addr:street": "paharpur",
+        "amenity": "hospital",
+        "description": "Life Care Hospital, Paharpur, Dinajpur Maternity Clinic Dr. Momtaz Begum Poly",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "gynaecology;Obstetrics;general;surgery",
+        "name": "Life Care Hospital",
+        "operator": "Life Care Hospital",
+        "operator:type": "private"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.990497,
+          25.3900955
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "opening_hours": "Sa-Fr 08:00-20:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9905594,
+          25.3893783
+        ]
+      },
+      "properties": {
+        "amenity": "clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9894281,
+          25.3882182
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "name": "Diabetes Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9886389,
+          25.3852606
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "name:bn": "\u09a1\u09be\u0983 \u0987\u09ae\u09be\u09b0 \u0989\u09a6\u09cd\u09a6\u09bf\u09a8 \u0995\u09ae\u09bf\u0989\u09a8\u09bf\u099f\u09bf \u09b9\u09be\u09b8\u09aa\u09be\u09a4\u09be\u09b2 \u0993 \u09a1\u09be\u09af\u09bc\u09be\u0997\u09a8\u09b7\u09cd\u099f\u09bf\u0995 \u09b8\u09c7\u09a8\u09cd\u099f\u09be\u09b0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.988826,
+          25.3961708
+        ]
+      },
+      "properties": {
+        "amenity": "clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9893571,
+          25.3949205
+        ]
+      },
+      "properties": {
+        "amenity": "clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6458358,
+          25.6194982
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "name:bn": "\u09ac\u09c7\u09b8\u09cd\u099f \u0995\u09c7\u09df\u09be\u09b0 \u09a1\u09be\u09df\u09be\u0997\u09a8\u09b8\u09cd\u099f\u09bf\u0995 \u09b8\u09c7\u09a8\u09cd\u099f\u09be\u09b0 \u098f\u09a8\u09cd\u09a1 \u09b9\u09b8\u09aa\u09bf\u099f\u09be\u09b2 \u09b2\u09bf\u0983"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6462516,
+          25.6197522
+        ]
+      },
+      "properties": {
+        "addr:city": "dinajpur",
+        "addr:postcode": "5200",
+        "addr:street": "Bypass Rd",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Zia Heart Foundation Hospital & Recharch Institute",
+        "operator": "Zia Heart Foundation",
+        "phone": "+88053165735"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6483021,
+          25.618607
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Health Care Pvt. Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6489995,
+          25.6172393
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name": "Islami Bank Community Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6414611,
+          25.5818089
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "name": "Horihorpur Community Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5554524,
+          26.337441
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "City General Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5554862,
+          26.3375442
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Alif Dental Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5554908,
+          26.3376353
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Desh Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.555288,
+          26.3377275
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Meri Stap Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5559822,
+          26.338919
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Sono LAB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5560005,
+          26.3392066
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Digi Care"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5563418,
+          26.3398041
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Digital General Hospital Panchagar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.231751,
+          25.764691
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Appollo Diagonestics Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2320903,
+          25.7644748
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Central Clinic and Diagonestics Centr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2321506,
+          25.7644253
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Anex Diagonestics Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2324159,
+          25.7642844
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "New Patgram Diagonestics Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2324425,
+          25.764266
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Ahmed Dental Care"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2324667,
+          25.7642511
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Appollo Diagonestics Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2325457,
+          25.7642014
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sheba Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.232456,
+          25.7645183
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Appex Dental Care"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2323159,
+          25.7647334
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Ekota Diagonestics Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2326621,
+          25.7640959
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Sun Diagonestics Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2328337,
+          25.7639184
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Sondhani Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2336659,
+          25.7633519
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Sheba Vaccine Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2337191,
+          25.7633304
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "pathology Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2338569,
+          25.7632367
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Fare Diagonestics"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2338962,
+          25.7632132
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Anko Pathology"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2340295,
+          25.7628497
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "The New Pathology"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.234219,
+          25.7632062
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Tech Care Lab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.234363,
+          25.7628497
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Classic Diagonestics"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2343938,
+          25.7628309
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Alam Ex Re Diagonestics"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2345887,
+          25.7628441
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Royal Diagonestics"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2346118,
+          25.7628288
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Metro Dental Care"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2346973,
+          25.7627831
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Brothers Lab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2347577,
+          25.7622969
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Uttam Sheba Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2347472,
+          25.7624736
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Prime Diagonestics"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2348429,
+          25.7624357
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Health Care Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2349445,
+          25.762626
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Recent Diagonestics"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.235039,
+          25.7624904
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Mohammadi Diagonestics"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2351126,
+          25.7620614
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Delta Dagonestics Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2350026,
+          25.7618482
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Islami Bank Community Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2354474,
+          25.7619001
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Dhap Bio Lab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2356799,
+          25.7616004
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Crecent Dental Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2362535,
+          25.7612985
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Jhorna Altrasnowgram"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2364104,
+          25.7612163
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Dentist Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2365123,
+          25.7611789
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Comfort Dental Care"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2366504,
+          25.761104
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Bright Dental Care"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2396858,
+          25.7611578
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Kabir Uddin Memorial College Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2393685,
+          25.7611217
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Lifeline Community Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.895401,
+          25.7836256
+        ]
+      },
+      "properties": {
+        "addr:city": "Rangpur",
+        "addr:street": "station road",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Saidpur Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8537949,
+          26.1139117
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Domar Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.6645924,
+          26.1194667
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Bhurungamari Upazila Health Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2337867,
+          25.7423483
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Sky Diagonestics Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2338699,
+          25.7423407
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Aroggo Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2339446,
+          25.7423413
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Pathology House"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.604,
+          25.9041617
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "SHAMIM DENTAL CARE, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6548921,
+          25.8569424
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Upazilla Livestock Office & Veterinary Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6714595,
+          25.7458545
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Altafun Nesa General Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6558961,
+          25.8479673
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Birganj Diabetes and Foot Care Center, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6486525,
+          25.6595465
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Paralysis And Disabled Rehabilitation Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6251935,
+          25.6294639
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "name": "Hasna Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6297734,
+          25.6283702
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "name": "Ahsan Clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6420204,
+          25.6287641
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Check Up Diagnostics And Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6304181,
+          25.611989
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Saint Vincent Hospital Dinajpur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.3536171,
+          25.2794042
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Palashbari Ibn Sina, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6304005,
+          25.6294417
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "name:en": "Aurobindo Shishu Hospital, Dinajpur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.3505856,
+          25.2823551
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "palashshbariprofecerpara, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.351074,
+          25.2854604
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "New Life Clinic And Consultation Center, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.330016,
+          25.3653964
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Madarpur Community Clinic, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.342761,
+          25.3451963
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Dhaperhat Sub-District Health Center Office, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.3284114,
+          25.3780491
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Khejmatpur Hospitals, Khejmatpur Union Sub-Health Center, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.3167109,
+          25.4173105
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Pirganj General Hospital And Diagnostic Center, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.3119153,
+          25.4223983
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Nagar Matrisadan, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.273316,
+          25.5798437
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Royal Health City Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2849853,
+          25.5323649
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Safura Eye Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.246357,
+          25.7173066
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Makbul Hosen General Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2314081,
+          25.7569399
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Manob Seba Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2313057,
+          25.7560779
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Asian General Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2310047,
+          25.7587184
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Metro Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.231162,
+          25.7582564
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Nirjon Clinic And Nursing Home, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2307625,
+          25.749218
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Apollo Eye Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.231189,
+          25.7597384
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ideal General Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2360146,
+          25.7618687
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Bangladesh Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2364204,
+          25.7626967
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Active Hospital Rangpur, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.232468,
+          25.7649268
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Health Plus Diagnostic, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2361573,
+          25.7623916
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Evergreen Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.237322,
+          25.7612079
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rangpur City Hospital, Private hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2379057,
+          25.7606704
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Prime Care Hospital And Diagnostic Center, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2494843,
+          25.75768
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rangpur Police Hospital, Government hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2351,
+          25.7629606
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Update Care Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2403485,
+          25.7284915
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Begum Rokeya Medical College And Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2344236,
+          25.7401329
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Lucky Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2369753,
+          25.7606959
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Good Helth Clinic, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.233822,
+          25.7421667
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Holy Crescent Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.23596,
+          25.7609428
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "RK Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.23179,
+          25.757876
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "International Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2344517,
+          25.7621969
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Uttomsheba Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.232633,
+          25.7601298
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Padma Digital Diagonstic Centre, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2353284,
+          25.7614644
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Mount Pacific Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.23425,
+          25.7616243
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Elma General Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2324693,
+          25.7637831
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Asha Hospital And Diagnostic Center, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2341904,
+          25.7623094
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rangpur General Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.238739,
+          25.7599146
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Impulse Care Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2323733,
+          25.7641919
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rainbow Clinic, Private hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.231868,
+          25.7633039
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rangpur Talukdar Hospital Private Limited, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.250884,
+          25.7525091
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Upazila Health Complex, Sadar Rangpur, Government hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.251889,
+          25.7523819
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Childrens Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.255969,
+          25.8577566
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Nurunnahar Community Clinic, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2541925,
+          25.8650732
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Family planning Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2355886,
+          25.7676016
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rangpur Good Health Nursing College, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2286683,
+          25.7699373
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Medinova Clinic And Nursing Home, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.221831,
+          25.7768591
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Hearing Care Center, Hearing aid store"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2303717,
+          25.7673749
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Emergency And Casualty, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2267407,
+          25.7723302
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sufia Kamal Memorial Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.226008,
+          25.772708
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Health care Hospital, Hospitalt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.0826039,
+          25.8116056
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ekarchali FWC, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.0688426,
+          25.8115659
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Family Checkup, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.0314114,
+          25.8108783
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Taragonj Upazilla Health Complex, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9144085,
+          25.7803219
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "SAP Medicare center, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9048833,
+          25.7796662
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Saidpur Community Eye Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9092483,
+          25.7793698
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "LABZONE GENERAL HOSPITAL, General hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9046754,
+          25.7785704
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Surjer Hashi Clinic, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9147319,
+          25.7806192
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hamdard Treatment and Sales Centre, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.905142,
+          25.778635
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Sajeda (Pvt) Clinic, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8933676,
+          25.7795594
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rotary Eye Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.894421,
+          25.7783162
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Popular Lab And Mission General Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.885274,
+          25.7757943
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "100 Bed Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8888337,
+          25.7779647
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Dr.Dil Afroza Memorial Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8949343,
+          25.7781014
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "City Community Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8928506,
+          25.7776059
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Green Life Lab and Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8920251,
+          25.7773622
+        ]
+      },
+      "properties": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "T.R Road Saidpur Nillphamary, Medical clinic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6758926,
+          25.7562779
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Astha Clinic and Diagnostic Center (anup), Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8939319,
+          25.777991
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Maa Hospital And Diagnostic Centre, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9022896,
+          25.7778894
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Labzone Diagnostic Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8972253,
+          25.782947
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Health Care Digital Diagnostic Centre, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8975036,
+          25.779366
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Alpha Diagnostic Centre, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8679356,
+          25.8469438
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sangalshi Govt. Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8681803,
+          25.8823973
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Bangladesh China Friendship 1000 Bed Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8647013,
+          25.858332
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Uttara EPZ Medical Center, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8664293,
+          25.9227618
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Internal Hospital, Nilphamari Jail, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.856976,
+          25.9285526
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Shaha Plaza Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8468939,
+          25.9300165
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Mouno general hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8455126,
+          25.9305128
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Adhunik Sadar Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8532483,
+          25.9310945
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Mother and Child Welfare Centre, Maternity hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8508156,
+          25.9310301
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "A. R General Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8452043,
+          25.9284005
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Disability Service and Assistance Center, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.845703,
+          25.9387645
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Roots Hospital And Diagnostic Center, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8483354,
+          25.9305866
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "DIGI Care Nilphamari, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8385264,
+          25.9566167
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "District Animal Resources Office, Animal hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.826603,
+          26.1021617
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sun Hospital And Diagnostic Center, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8431176,
+          25.9664739
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Government Leprosy Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8425623,
+          25.9668075
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Notkhana Kusto Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8424733,
+          25.9842249
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Palash Bari Diabetes Clinic, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.8461242,
+          25.9695585
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Danish Bangladesh Leprosy Mission, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.830876,
+          26.0312869
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Laxmichup UH And FWC, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.7551739,
+          26.1164544
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Debiganj Sadar Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5548581,
+          26.2028597
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Surma General Hospital and diagnostic centre, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5550295,
+          26.202913
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "B Four General Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5553827,
+          26.199342
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Upazila Livestock Department and Veterinary Hospital, Animal hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.554056,
+          26.2026186
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Boda Upazila Health Complex, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5569407,
+          26.3442635
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Diabetic Hospital Panchagarh, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5588687,
+          26.2531121
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rashed Medical Store, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.554884,
+          26.3344195
+        ]
+      },
+      "properties": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Health Care Specialized Hospital, Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5551931,
+          26.1966532
+        ]
+      },
+      "properties": {
+        "addr:city": "\u09ac\u09cb\u09a6\u09be",
+        "addr:postcode": "5010",
+        "addr:street": "\u09a1\u09be\u0995 \u09ac\u09be\u0982\u09b2\u09cb \u09b0\u09cb\u09a1 (Daak Bangla Road)",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "gynaecology;biology;psychiatry;internal;physiotherapy",
+        "name": "Child Health & Mother Care Hospital (\u09ae\u09be \u0993 \u09b6\u09bf\u09b6\u09c1 \u0995\u09b2\u09cd\u09af\u09be\u09a3 \u0995\u09c7\u09a8\u09cd\u09a6\u09cd\u09b0, \u09ac\u09cb\u09a6\u09be, \u09aa\u099e\u09cd\u099a\u0997\u09a1\u09bc)",
+        "name:bn": "\u09ae\u09be \u0993 \u09b6\u09bf\u09b6\u09c1 \u0995\u09b2\u09cd\u09af\u09be\u09a3 \u0995\u09c7\u09a8\u09cd\u09a6\u09cd\u09b0, \u09ac\u09cb\u09a6\u09be, \u09aa\u099e\u09cd\u099a\u0997\u09dc",
+        "operator": "\u09ae\u09be \u0993 \u09b6\u09bf\u09b6\u09c1 \u0995\u09b2\u09cd\u09af\u09be\u09a3 \u0995\u09c7\u09a8\u09cd\u09a6\u09cd\u09b0, \u09ac\u09cb\u09a6\u09be, \u09aa\u099e\u09cd\u099a\u0997\u09a1\u09bc",
+        "operator:type": "public"
+      }
+    }
+  ]
+}

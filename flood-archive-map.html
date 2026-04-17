@@ -72,7 +72,6 @@
         <h1>Bangladesh Flood Research</h1>
         <nav style="display: flex; gap: 2rem;">
             <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Home</a>
-            <a href="infrastructure-map.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Infra Map</a>
             <a href="analytics.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Analytics</a>
         </nav>
         <div style="font-size: 0.65rem; color: var(--accent); border: 1px solid var(--accent); padding: 4px 12px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Delineated Border View</div>
@@ -96,6 +95,10 @@
                     <label style="font-size: 0.8rem; display: flex; align-items: center; gap: 10px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.05em;">
                         <input type="checkbox" id="toggle-shelters" checked onchange="toggleShelters()" style="accent-color: #10b981;"> 
                         Safe Hubs <span style="color: var(--text-muted); font-size: 0.7rem;">(Flood Shelters)</span>
+                    </label>
+                    <label style="font-size: 0.8rem; display: flex; align-items: center; gap: 10px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.05em;">
+                        <input type="checkbox" id="toggle-health" checked onchange="toggleHealth()" style="accent-color: #10b981;"> 
+                        Health Sites <span style="color: var(--text-muted); font-size: 0.7rem;">(Hospitals/Clinics)</span>
                     </label>
                 </div>
             </div>
@@ -206,7 +209,8 @@
             div.innerHTML += '<div style="margin-top:5px; padding-top:5px; border-top:1px solid #eee;">';
             div.innerHTML += '<i style="background: #3b82f6; width: 12px; height: 2px; border-radius: 0;"></i> Teesta River<br>';
             div.innerHTML += '<i style="background: #3b82f6; width: 8px; height: 8px; opacity:0.5;"></i> Affected District<br>';
-            div.innerHTML += '<i style="background: #10b981; width: 10px; height: 10px; border: 1px solid white;"></i> Safe Hub</div>';
+            div.innerHTML += '<i style="background: #10b981; width: 10px; height: 10px; border: 1px solid white;"></i> Safe Hub<br>';
+            div.innerHTML += '<i style="background: #34d399; width: 10px; height: 10px; border-radius: 50%; border: 1px solid white;"></i> Health Site</div>';
             return div;
         };
         legend.addTo(map);
@@ -214,6 +218,7 @@
         // 4. TEESTA SPECIFIC LOGIC
         var teestaGroup = L.layerGroup().addTo(map);
         var teestaShelterLayer = L.layerGroup().addTo(map);
+        var teestaHealthLayer = L.layerGroup().addTo(map);
 
         function toggleShelters() {
             var checkbox = document.getElementById('toggle-shelters');
@@ -221,6 +226,15 @@
                 map.addLayer(teestaShelterLayer);
             } else {
                 map.removeLayer(teestaShelterLayer);
+            }
+        }
+
+        function toggleHealth() {
+            var checkbox = document.getElementById('toggle-health');
+            if (checkbox.checked) {
+                map.addLayer(teestaHealthLayer);
+            } else {
+                map.removeLayer(teestaHealthLayer);
             }
         }
 
@@ -277,6 +291,24 @@
                                 }).bindPopup(`<strong>Safe Hub: ${feature.properties.name || feature.properties['name:en'] || 'Unnamed Shelter'}</strong><br>Type: ${feature.properties.shelter_type || 'General'}`);
                             }
                         }).addTo(teestaShelterLayer);
+                    });
+
+                // Load Teesta Health Sites
+                fetch('data/teesta_health_facilities.geojson')
+                    .then(res => res.json())
+                    .then(data => {
+                        L.geoJSON(data, {
+                            pointToLayer: function (feature, latlng) {
+                                return L.circleMarker(latlng, {
+                                    radius: 4,
+                                    fillColor: "#34d399",
+                                    color: "#fff",
+                                    weight: 1,
+                                    opacity: 1,
+                                    fillOpacity: 0.8
+                                }).bindPopup(`<strong>Health Site: ${feature.properties.name || 'Unnamed Facility'}</strong><br>Type: ${feature.properties.amenity || 'Medical'}`);
+                            }
+                        }).addTo(teestaHealthLayer);
                     });
             }
         }

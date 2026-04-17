@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9507025,
+          25.7105935
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.7640528,
+          25.5133136
+        ]
+      },
+      "properties": {
+        "addr:district": "Kurigram",
+        "addr:union": "Kodal Kathi",
+        "amenity": "shelter",
+        "description": "semi pucca House. Click here more information- https://www.openstreetmap.org/user/aHaSaN/diary.",
+        "name": "Uttar Kodalkati Bepari para Ashroyon Prokalpa ( \u0989\u09a4\u09cd\u09a4\u09b0 \u0995\u09cb\u09a6\u09be\u09b2\u0995\u09be\u099f\u09bf \u09ac\u09c7\u09aa\u09be\u09b0\u09c0 \u09aa\u09be\u09a1\u09bc\u09be \u0986\u09b6\u09cd\u09b0\u09af\u09bc\u09a3 \u09aa\u09cd\u09b0\u0995\u09b2\u09cd\u09aa )",
+        "source": "survey",
+        "source:date": "2018-11-05",
+        "source:name": "logic_undp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.7820142,
+          25.4364103
+        ]
+      },
+      "properties": {
+        "addr:district": "Kurigram",
+        "addr:union": "Char Rajibpur",
+        "addr:ward": "9",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "Annexed with west Rajibpur GPS. Basement inundates by last floods 2017only earthen plinth level eroded. Damage percentage was 30",
+        "name": "USAID School cum Flood shelter",
+        "source": "survey",
+        "source:date": "2018-05-07",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.784565,
+          25.4328956
+        ]
+      },
+      "properties": {
+        "addr:district": "Kurigram",
+        "addr:union": "Char Rajibpur",
+        "addr:ward": "5",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "Moricha kandi Flood shelter cum Government Primary School. Partially damaged in 2008 flood. Damage percentage was 10",
+        "name": "Disaster Shelter",
+        "source": "survey",
+        "source:date": "2018-05-07",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9940831,
+          25.3977288
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.3235949,
+          25.394488
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    }
+  ]
+}

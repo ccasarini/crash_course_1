@@ -64,6 +64,16 @@
                 <button onclick="focusTeesta()" style="width: 100%; padding: 10px; background: #3b82f6; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; font-family: 'Inter';">Focus on Teesta Area</button>
             </div>
 
+            <div id="filter-card" class="card" style="display:none; border-left: 4px solid #10b981;">
+                <h2>Interactive Filters</h2>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 5px;">
+                    <label style="font-size: 0.85rem; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                        <input type="checkbox" id="toggle-shelters" checked onchange="toggleShelters()"> 
+                        <strong>Safe Hubs</strong> (Flood Shelters)
+                    </label>
+                </div>
+            </div>
+
             <div id="event-card" class="card" style="display:none;">
                 <h2>Event Stats</h2>
                 <div id="details-content"></div>
@@ -182,15 +192,29 @@
             div.innerHTML += '<i style="background: #ef4444; width: 16px; height: 12px;"></i> High<br>';
             div.innerHTML += '<div style="margin-top:5px; padding-top:5px; border-top:1px solid #eee;">';
             div.innerHTML += '<i style="background: #3b82f6; width: 12px; height: 2px; border-radius: 0;"></i> Teesta River<br>';
-            div.innerHTML += '<i style="background: #3b82f6; width: 8px; height: 8px; opacity:0.5;"></i> Affected District</div>';
+            div.innerHTML += '<i style="background: #3b82f6; width: 8px; height: 8px; opacity:0.5;"></i> Affected District<br>';
+            div.innerHTML += '<i style="background: #10b981; width: 10px; height: 10px; border: 1px solid white;"></i> Safe Hub</div>';
             return div;
         };
         legend.addTo(map);
 
         // 4. TEESTA SPECIFIC LOGIC
         var teestaGroup = L.layerGroup().addTo(map);
+        var teestaShelterLayer = L.layerGroup().addTo(map);
+
+        function toggleShelters() {
+            var checkbox = document.getElementById('toggle-shelters');
+            if (checkbox.checked) {
+                map.addLayer(teestaShelterLayer);
+            } else {
+                map.removeLayer(teestaShelterLayer);
+            }
+        }
 
         function focusTeesta() {
+            // Show filter card
+            document.getElementById('filter-card').style.display = 'block';
+
             // Teesta area coordinates
             map.flyTo([25.8, 89.2], 9, {
                 duration: 1.5
@@ -223,6 +247,23 @@
                                 }).bindTooltip(feature.properties.name, { permanent: true, direction: 'right', className: 'district-label' });
                             }
                         }).addTo(teestaGroup);
+                    });
+                
+                // Load Teesta Safe Hubs
+                fetch('data/teesta_safe_hubs.geojson')
+                    .then(res => res.json())
+                    .then(data => {
+                        L.geoJSON(data, {
+                            pointToLayer: function (feature, latlng) {
+                                return L.marker(latlng, {
+                                    icon: L.divIcon({
+                                        className: 'shelter-icon',
+                                        html: '<div style="background-color: #10b981; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white;"></div>',
+                                        iconSize: [12, 12]
+                                    })
+                                }).bindPopup(`<strong>Safe Hub: ${feature.properties.name || feature.properties['name:en'] || 'Unnamed Shelter'}</strong><br>Type: ${feature.properties.shelter_type || 'General'}`);
+                            }
+                        }).addTo(teestaShelterLayer);
                     });
             }
         }

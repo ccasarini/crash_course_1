@@ -1,0 +1,4794 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0598548,
+          22.6318833
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "\u0986\u09ac\u09b9\u09be\u0993\u09df\u09be \u09ad\u09ac\u09a8",
+        "name:en": "Weather House",
+        "shelter_type": "weather_shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3706365,
+          22.69839
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.73713,
+          22.4573267
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.0175493,
+          23.8164041
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name:en": "Makko Miahr Bari(Chowdhury Bari)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4012352,
+          23.875915
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "internet_access": "wlan",
+        "name": "Sadharan Bima Quarter",
+        "name:en": "Sadharan Bima Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.847798,
+          22.3582393
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "internet_access": "wlan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3760848,
+          23.8041471
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9507025,
+          25.7105935
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8365322,
+          22.3786539
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "internet_access": "wlan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9037979,
+          22.2250133
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Anowara",
+        "name:bn": "\u0986\u09a8\u09cb\u09df\u09be\u09b0\u09be",
+        "name:en": "Anowara",
+        "note": "Shelter ID 0166MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.85125,
+          22.2243333
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "1 No. Barag Para Government Primary School",
+        "note": "Shelter ID 26098",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9187408,
+          22.2083177
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Bilpur",
+        "note": "Shelter ID 0154MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8407956,
+          22.227034
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Moddo Bairag Government Primary School",
+        "note": "Shelter ID 26100",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9053278,
+          22.1886499
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Barakhain Paddapara",
+        "note": "Shelter ID 0151MRA",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8994722,
+          22.1929444
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Barakhain Jameya Jamuria Alim Madrasha",
+        "note": "Shelter ID 0148MRA",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8602222,
+          22.2258555
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Purbobairag Government Primary School",
+        "note": "Shelter ID 26099",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8381647,
+          22.2359286
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "North Bander",
+        "note": "Shelter ID 26101",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.876143,
+          22.2011516
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Hajigonj Jhiyri",
+        "note": "Shelter ID 0146MRA",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9221963,
+          22.1900265
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "East Barakhain",
+        "note": "Shelter ID 0137FLR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9035278,
+          22.2072778
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Silaigara",
+        "note": "Shelter ID 0135FLR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8977457,
+          22.1948258
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Paschim Baraikhain",
+        "note": "Shelter ID 0147MRA",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8881667,
+          22.1971111
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Jhiyri",
+        "note": "Shelter ID 0145MRA",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.834226,
+          22.1859636
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Boilia Primary School",
+        "note": "Shelter ID 26092",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8417095,
+          22.1953917
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Barashat Government Primary School",
+        "note": "Shelter ID 26093",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9077789,
+          22.1793732
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Tailardip Baraikhain",
+        "note": "Shelter ID 0149MRA",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9036443,
+          22.2072174
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Silaigara",
+        "note": "Shelter ID 0155MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9071332,
+          22.1717784
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Tailadwip",
+        "note": "Shelter ID 0150MRA",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8612251,
+          22.1931439
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "4 no Batalia Mohasin Ailia Government Primary School",
+        "note": "Shelter ID 26094",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8637778,
+          22.182
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "30 no. Airmangal Government Primary High School",
+        "note": "http://cdmp.org.bd/csdb/",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8433889,
+          22.2047778
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Gundip Government Primary School",
+        "note": "Shelter ID 0127MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8430349,
+          22.2062896
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Gundip Cyclone Shelter",
+        "note": "Shelter ID 0129MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9322259,
+          22.19422
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "85 No Uttar Haildhar",
+        "note": "Shelter ID 0131MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.934717,
+          22.1908801
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "74 No Haildhar",
+        "note": "Shelter ID 0132MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8904167,
+          22.2299722
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Singhara",
+        "note": "Shelter ID 0152MRA",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8941389,
+          22.2420833
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Keagar",
+        "note": "Shelter ID 0142FLR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8677778,
+          22.1519444
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Uttar Jaudandi High School",
+        "note": "Shelter ID 0111SKH",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8722839,
+          22.1489341
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Uttar Jaidandi Government Primary School",
+        "note": "Shelter ID 26091",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8833333,
+          22.1830556
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Boromchora Uddion Caritas Cyclone Shalter",
+        "note": "Shelter ID 0103SKH",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8541667,
+          22.17275
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Purbo Baria T.M.C. High School",
+        "note": "Shelter ID 26096",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8510682,
+          22.2109594
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Chapa Tali",
+        "note": "Shelter ID 0128MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8541152,
+          22.1828962
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Aiar Mushi Totali Government Primary School",
+        "note": "Shelter ID 26107",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8763832,
+          22.1824535
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Uttar Burumchhara",
+        "note": "Shelter ID 0110SKH",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.876413,
+          22.173186
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Paschim Burumchora",
+        "note": "Shelter ID 0108SKH",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8784353,
+          22.136973
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Maddha Juidondi Cyclone Shelter",
+        "note": "Shelter ID 0112SKH",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8642637,
+          22.1636825
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Khuruskul Governmet Primary School",
+        "note": "Shelter ID 22404",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8643652,
+          22.1638595
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Khuruskhul",
+        "note": "Shelter ID 0125FLR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8725091,
+          22.1440869
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Dakhin Jaidandi Government Primary School",
+        "note": "Shelter ID 26089",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8749751,
+          22.1883799
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Burumchhara Naldia",
+        "note": "Shelter ID 0123FLR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8780556,
+          22.1647222
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Burumchhara Ideal Primary School",
+        "note": "Shelter ID 0107SKH",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8923056,
+          22.1784167
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Burumchhara Chamudia",
+        "note": "Shelter ID 0121FLR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8925,
+          22.1783333
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Burum Chhara Shomodia",
+        "note": "Shelter ID 0104SKH",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8919038,
+          22.16806
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Burum Chara",
+        "note": "Shelter ID 0106SKH",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8922222,
+          22.1697222
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Boromsona Shohid Basharuzzaman High School",
+        "note": "Shelter ID 0105SKH",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9253889,
+          22.2121667
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Uttar Ichakhali",
+        "note": "Shelter ID 0136MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9563333,
+          22.2225
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "68 No. Silalia",
+        "note": "Shelter ID 0156MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9571389,
+          22.2318611
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Oskhain Yousuf Ali",
+        "note": "Shelter ID 0141FLR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9489399,
+          22.1976619
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Pir Khair",
+        "note": "Shelter ID 0134MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9309444,
+          22.2059444
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Malghar Government Primary School",
+        "note": "Shelter ID 0130MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9320278,
+          22.2234722
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Khaskhama",
+        "note": "Shelter ID 0140FLR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9380278,
+          22.2182222
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Gujra",
+        "note": "Shelter ID 0139FLR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.942,
+          22.1864444
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Dakkhin Ichha Khali",
+        "note": "Shelter ID 0133MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8334167,
+          22.1364167
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Madhua Gahira Government Primary School",
+        "note": "Shelter ID 26084",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8264444,
+          22.155175
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Khordda Gahira Government Primary School",
+        "note": "Shelter ID 22409",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8235298,
+          22.1804477
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Hazi Md. Nasim Girls High School",
+        "note": "Shelter ID 0164MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8372222,
+          22.1475
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Ezharul Ulum Hafezia Madrasa",
+        "note": "Shelter ID 0161MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8390278,
+          22.1428333
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "East Gahira Government Primary School",
+        "note": "Shelter ID 26085",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8276697,
+          22.165887
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Dakshin Paruapara Cyclone Shelter",
+        "note": "Shelter ID 26081",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.841,
+          22.1273333
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Dakhin Gahira Government Primary School",
+        "note": "Shelter ID 22413",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8343971,
+          22.1717798
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Chunna Para M F A",
+        "note": "Shelter ID 0163MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9569444,
+          22.2322222
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Yusuf Ali Oskhin",
+        "note": "Shelter ID 0157MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9282778,
+          22.2383056
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Ramjan Ali",
+        "note": "Shelter ID 0159MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9419444,
+          22.2238889
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Patnikuta Government Primary School",
+        "note": "Shelter ID 0158MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.6523226,
+          22.6300566
+        ]
+      },
+      "properties": {
+        "District": "Chittagong",
+        "Shelter ID": "0117MNR",
+        "Union": "Sitakunda",
+        "Upazila": "Sitakunda",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Shakpara Obaydia GPS Cyclone Shelter",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8257949,
+          22.1806047
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Uttar Pura Para Government School",
+        "note": "Shelter ID 26082",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8299622,
+          22.1491389
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Uttar Gohira",
+        "note": "Shelter ID 0129FLR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8300705,
+          22.1491875
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Uttar Gohira Government Primary School",
+        "note": "Shelter ID 26086",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8371606,
+          22.1616283
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Roypur",
+        "note": "Shelter ID 0160MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8380556,
+          22.1601389
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Raipur Bhahumukhi High School c.s",
+        "note": "Shelter ID 22407",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8554158,
+          22.350453
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Bakalia",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Modho Baulia Government Primary School cum Shelter",
+        "note": "Shelter ID 0213SKI",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8497778,
+          22.3468333
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Bakalia",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Abdul Bari Government Primary School cum Shelter",
+        "note": "Shelter ID 0209SKI",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8496882,
+          22.1619682
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Anowara",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Uttar Sarenga Government Primary School",
+        "note": "Shelter ID 0162MRR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8930556,
+          22.0500242
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "31 No Uttar Ratanpur Government Primary School",
+        "note": "Shelter ID 21934",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8478056,
+          22.3392778
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Bakalia",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Char Chaktai Government Primary School cum Shelter",
+        "note": "Shelter ID 0210SKI",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8660416,
+          22.3618641
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Bakalia",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Waizarpara Government Primary School cum Shelter",
+        "note": "Shelter ID 0211SKI",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8890492,
+          22.0828777
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Paschim Chapa Chori Government Primary School",
+        "note": "Shelter ID 0144MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8803005,
+          22.0630464
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Paschim Baharchhara Government Primary School",
+        "note": "Shelter ID 0153FLR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8778504,
+          22.0611965
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Mohammadia Talamul Quran Madrasa",
+        "note": "Shelter ID 0149MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.879073,
+          22.0847739
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Dighirpara Government Primary School",
+        "note": "Shelter ID 0145MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8821881,
+          22.0763545
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Bangladesh Red Cresent Society Uttar Baharchara Cyclone Shelter",
+        "note": "Shelter ID 26050",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8902778,
+          22.0605278
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Baharsra Ratnapur High School",
+        "note": "Shelter ID 0150MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8813056,
+          22.0723056
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Uttar Baharsara Government Primary School - 29 No",
+        "note": "Shelter ID 0147MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8852222,
+          22.0558889
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Ratnapur Government Primary School",
+        "note": "Shelter ID 0151MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8902687,
+          22.0508862
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Purba Ramtapur Government Primary School cum Shelter",
+        "note": "Shelter ID 21929",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8871181,
+          22.0631944
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Puabo Banchara Government Primary School",
+        "note": "Shelter ID 21935",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8787222,
+          22.0643333
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Prosika Cyclone Shelter",
+        "note": "Shelter ID 0148MNR",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.88925,
+          22.0756222
+        ]
+      },
+      "properties": {
+        "addr:district": "Chittagong",
+        "addr:subdistrict": "Banshkhali",
+        "amenity": "shelter",
+        "emergency": "assembly_point",
+        "name": "Paschim Chapachari Government Primary School",
+        "note": "Shelter ID 21946",
+        "source": "http://cdmp.org.bd/csdb/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4215599,
+          23.7679888
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "internet_access": "wlan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3724977,
+          23.8079086
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "internet_access": "wlan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0032034,
+          23.8542566
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.78843,
+          22.2808383
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "internet_access": "wlan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4283238,
+          23.7739468
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "Park Shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.7640528,
+          25.5133136
+        ]
+      },
+      "properties": {
+        "addr:district": "Kurigram",
+        "addr:union": "Kodal Kathi",
+        "amenity": "shelter",
+        "description": "semi pucca House. Click here more information- https://www.openstreetmap.org/user/aHaSaN/diary.",
+        "name": "Uttar Kodalkati Bepari para Ashroyon Prokalpa ( \u0989\u09a4\u09cd\u09a4\u09b0 \u0995\u09cb\u09a6\u09be\u09b2\u0995\u09be\u099f\u09bf \u09ac\u09c7\u09aa\u09be\u09b0\u09c0 \u09aa\u09be\u09a1\u09bc\u09be \u0986\u09b6\u09cd\u09b0\u09af\u09bc\u09a3 \u09aa\u09cd\u09b0\u0995\u09b2\u09cd\u09aa )",
+        "source": "survey",
+        "source:date": "2018-11-05",
+        "source:name": "logic_undp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8283198,
+          22.2453528
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Southkhali",
+        "addr:ward": "5",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "uporer talar tiner cal nosto hoye jay, 2009 asle 50% damage hoyechilo",
+        "hazard_intensity": "high",
+        "name": "Uttar Southkhali Brac Cyclone Center",
+        "name_disaster": "Aila",
+        "source": "survey",
+        "source:date": "2018-11-07",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8315673,
+          22.2577602
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Southkhali",
+        "addr:ward": "1",
+        "amenity": "shelter",
+        "description": "two storey building long 130 feet width 45 feet",
+        "name": "Sonatola Cyclone Center-2",
+        "source": "survey",
+        "source:date": "2018-11-07",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8293123,
+          22.2192523
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Southkhali",
+        "addr:ward": "7",
+        "amenity": "shelter",
+        "damage": "Yes",
+        "description": "pucca, 2007 & 2009 sale plaster 25% damage hoyechilo",
+        "hazard_intensity": "low",
+        "name": "Bogi Dashghar Cyclone Center",
+        "name_disaster": "Sidor Aila",
+        "source": "survey",
+        "source:date": "2018-11-07",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8136079,
+          22.2183646
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Southkhali",
+        "addr:ward": "9",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "2008 sale notun kore toiri kora hoy. 2009 sale 25% damage hoy.",
+        "hazard_intensity": "low",
+        "name": "Khuriakhali Cyclone Center",
+        "name_disaster": "Aila",
+        "source": "survey",
+        "source:date": "2018-11-07",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8086834,
+          22.2800276
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Southkhali",
+        "addr:ward": "1",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "three storey building, angshik khotigrostho hoyeche.60% damaged",
+        "hazard_intensity": "high",
+        "name": "Uttar Tafalbari Cyclone Center",
+        "name_disaster": "Sidor Aila",
+        "source": "survey",
+        "source:date": "2018-11-07",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8038688,
+          22.266334
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Southkhali",
+        "addr:ward": "1",
+        "amenity": "shelter",
+        "description": "three storey building 5k people can take shalter here",
+        "name": "Sonatola Cyclone Center",
+        "source": "survey",
+        "source:date": "2018-11-07",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8311737,
+          22.2241575
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Southkhali",
+        "addr:ward": "7",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "purbe sompurnorupe dhose giyechilo ja bortomane pucca kora hoyeche. 2007 & 2009 sale obokathamo venge giye 60% khoti hoyrchilo.",
+        "hazard_intensity": "high",
+        "name": "30 No Bogi Govt Primary School Cyclone Center",
+        "name_disaster": "Sidor Aila",
+        "school": "primary",
+        "source": "survey",
+        "source:date": "2018-11-07",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8542126,
+          22.3414972
+        ]
+      },
+      "properties": {
+        "address": "6 no ward",
+        "amenity": "shelter",
+        "building": "yes",
+        "description": "Length 100 feet Width 35 feet Land 30 Decimal",
+        "name": "Vernierpar Shelter center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8549435,
+          22.3172099
+        ]
+      },
+      "properties": {
+        "addr:district": "Khulna",
+        "addr:union": "Khantakata",
+        "amenity": "shelter",
+        "building": "yes",
+        "description": "Two-storied building Length 45 feet Width 35 feet 6 room",
+        "hazard_intensity": "low",
+        "name": "Scout Shelter center",
+        "source:date": "17/09/2018",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.6941531,
+          22.4748308
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Mithakhali",
+        "addr:ward": "5",
+        "amenity": "shelter",
+        "description": "Double storey building.Click here for more information- https://www.openstreetmap.org/user/aHaSaN/diary",
+        "name": "Goalir Metho Govt. Primary School / Cyclone Center",
+        "source": "survey",
+        "source:date": "2018-03-08",
+        "source:name": "logic_undp",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8778576,
+          22.3440277
+        ]
+      },
+      "properties": {
+        "address": "4 no ward",
+        "amenity": "shelter",
+        "building": "yes",
+        "description": "Length 60 feet Width 35 feet Land 30 Decimal",
+        "name": "105 no Khantakata United Government Primary School Shelter center",
+        "source": "survey",
+        "source:date": "15-05-2018",
+        "source:name": "logic_undp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3784361,
+          23.6991456
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "bin": "yes",
+        "name": "kalindi playground pavilion",
+        "shelter_type": "pavilion"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3241061,
+          21.8979738
+        ]
+      },
+      "properties": {
+        "addr:district": "Patuakhali",
+        "addr:union": "Boro Baishdia",
+        "addr:ward": "7",
+        "amenity": "shelter",
+        "description": "4000 square feet, two storey building.",
+        "name": "Mowdubi Kazi Kanda Govt. Primary School Kum Cyclone Center",
+        "source": "survey",
+        "source:date": "9/9/2018",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4043966,
+          21.9132822
+        ]
+      },
+      "properties": {
+        "addr:district": "Patuakhali",
+        "addr:union": "Rangabali",
+        "addr:ward": "5",
+        "amenity": "shelter",
+        "building": "yes",
+        "damage": "no",
+        "description": "Uchu tilar ney 70 decima",
+        "name": "Bonnai Matir Uchu Shelter center",
+        "source": "survey",
+        "source:date": "2018-09-17",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4122877,
+          21.959206
+        ]
+      },
+      "properties": {
+        "addr:district": "Patuakhali",
+        "addr:union": "Rangabali",
+        "addr:ward": "2",
+        "amenity": "shelter",
+        "building": "yes",
+        "damage": "yes",
+        "description": "60 tin and wood room,damage date 2013,damage description tiner chala uriye niye geche akhon notun kora hoyeche 50%,Mahasen",
+        "name": "Uttor Kajir Aoula Shelter center",
+        "source": "survey",
+        "source:date": "2018-09-17",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4644889,
+          21.9759964
+        ]
+      },
+      "properties": {
+        "addr:district": "Patuakhali",
+        "addr:union": "Rangabali",
+        "addr:ward": "1",
+        "amenity": "shelter",
+        "building": "yes",
+        "damage": "yes",
+        "description": "3 decimal High hill top,damage date 2007, 2009, 2013,damage description tilar mati dhose pore 25%,Aila,Sidor,Mahasen",
+        "name": "Posur Shelter center",
+        "source": "survey",
+        "source:date": "2018-09-17",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4304194,
+          21.9139939
+        ]
+      },
+      "properties": {
+        "addr:district": "Patuakhali",
+        "addr:union": "Rangabali",
+        "addr:ward": "5",
+        "amenity": "shelter",
+        "building": "yes",
+        "damage": "yes",
+        "description": "Constructed building,damage date:2007,damage description: Platform nosto hoye geche,15%,Sidor",
+        "name": "Samudaft Ghurni Jhor Shelter center",
+        "source": "survey",
+        "source:date": "2018-09-17",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3391546,
+          21.9134837
+        ]
+      },
+      "properties": {
+        "addr:district": "Patuakhali",
+        "addr:ward": "6",
+        "amenity": "shelter",
+        "description": "Two storey, 3500 square feet concrete er okejo deyal.",
+        "name": "Kankunipara Cyclone Center",
+        "source": "survey",
+        "source:date": "9/9/2018",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "institutional"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3453049,
+          21.9255023
+        ]
+      },
+      "properties": {
+        "addr:district": "Patuakhali",
+        "addr:union": "Boro Baishdia",
+        "addr:ward": "6",
+        "amenity": "shelter",
+        "description": "Concrete built two storey, 5000 square.",
+        "name": "Chatiyan Para Ashar Alo Jame Masjid Kum Cycole Center",
+        "source": "survey",
+        "source:date": "9/9/2018",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3902882,
+          21.984264
+        ]
+      },
+      "properties": {
+        "addr:district": "Patuakhali",
+        "addr:union": "Boro Baishdia",
+        "addr:ward": "2",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Concrete built two storey building.",
+        "name": "38 No Gabbunia GPS Kam Cyclone Center",
+        "source": "survey",
+        "source:date": "9/9/2018",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3351071,
+          21.8704102
+        ]
+      },
+      "properties": {
+        "addr:district": "Patuakhali",
+        "addr:union": "Boro Baishdia",
+        "addr:ward": "8",
+        "amenity": "shelter",
+        "description": "Concrete built two storey building.",
+        "name": "44 No Mukhar Banda GPS Kam Cyclone Center",
+        "source": "survey",
+        "source:date": "9/9/2018",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8033726,
+          22.3852405
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Dhanshagor",
+        "addr:ward": "ward 2",
+        "amenity": "shelter",
+        "description": "2 storied, 50% damaged in 2007",
+        "name": "Radha Laxmi Cyclone Shelter",
+        "name_disaster": "Sidor",
+        "source": "servey",
+        "source:date": "12-07-18",
+        "source:name": "logic_undp",
+        "source:ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8135006,
+          22.3868699
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Dhanshagor",
+        "addr:ward": "2",
+        "amenity": "shelter",
+        "description": "Cyclone Center beside of Dhanshagor United School, 70% damaged in 2007",
+        "name": "Cyclone Center beside of Dhanshagor United School",
+        "name_disaster": "Sidor",
+        "source": "servey",
+        "source:date": "12-07-18",
+        "source:name": "logic_undp",
+        "source:ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8129535,
+          22.3869244
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Dhanshagor",
+        "addr:ward": "ward 2",
+        "amenity": "shelter",
+        "description": "Built in 2010 1 storied area of land 10 decimal, no damage",
+        "name": "Shelter Project pace 2",
+        "source": "servey",
+        "source:date": "12-07-18",
+        "source:name": "logic_undp",
+        "source:ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.5341901,
+          22.2338493
+        ]
+      },
+      "properties": {
+        "addr:district": "PatuaKhali",
+        "addr:union": "Rangopaldi UP",
+        "addr:ward": "5",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "2 tola paka buliding tar upore aktola paka tin shade.2007 sale 3 tola asroy kendro venge jay,schooler mathe pani uthe 100% damage hoy.",
+        "name": "21 No East Jouta School Cam cyclone Shelter",
+        "name_disaster": "sidr",
+        "source": "survey",
+        "source:name": "logic_undp",
+        "source_date": "15/11/2018",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.5050921,
+          22.2126709
+        ]
+      },
+      "properties": {
+        "addr:district": "PatuaKhali",
+        "addr:union": "Rangopaldi UP",
+        "addr:ward": "7",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "40 ti tiner semi paka bari.2013 sale 20ti bari bosobasher onupojugi hoyechilo baki 20ti barir obostha norbore.damage 65%",
+        "name": "Asroyon Prokolpo",
+        "name_disaster": "mohsen",
+        "source": "survey",
+        "source:name": "logic_undp",
+        "source_date": "15/11/2018",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4880977,
+          22.1994959
+        ]
+      },
+      "properties": {
+        "addr:district": "PatuaKhali",
+        "addr:union": "Rangopaldi UP",
+        "addr:ward": "2",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "paka.plabito hoy, obokathamor 10% damage hoy",
+        "name": "Ronogopaldi UP Health and Family Welfare Center",
+        "name_disaster": "high tide,heavy rainfall,cyclone",
+        "source": "survey",
+        "source:name": "logic_undp",
+        "source_date": "15/11/2018",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4993683,
+          22.193373
+        ]
+      },
+      "properties": {
+        "addr:district": "PatuaKhali",
+        "addr:union": "Rangopaldi UP",
+        "addr:ward": "3",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "29 sotangsho jomir upor paka bhaban",
+        "name": "School Kam Cyclone Shelter",
+        "source": "survey",
+        "source:name": "logic_undp",
+        "source_date": "15/11/2018",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.5125648,
+          22.1954144
+        ]
+      },
+      "properties": {
+        "addr:district": "PatuaKhali",
+        "addr:union": "Rangopaldi UP",
+        "addr:ward": "9",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "nodir chore nirmadhin abason",
+        "name": "East Rangopaldi Abason Prokolpo",
+        "source": "survey",
+        "source:name": "logic_undp",
+        "source_date": "15/11/2018",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.7500932,
+          22.5710977
+        ]
+      },
+      "properties": {
+        "addr:district": "Bhola",
+        "addr:union": "Saidpur",
+        "addr:ward": "7",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "2 storey building, 8 teacher , 185 student",
+        "name": "Cyclone centre medel Borodholi GPS",
+        "source": "survey",
+        "source:date": "2018-08-11",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "economic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.7312815,
+          22.5672934
+        ]
+      },
+      "properties": {
+        "addr:district": "Bhola",
+        "addr:union": "Saidpur",
+        "addr:ward": "3",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Length 100 feet, Width 60 feet.The capacity of 2 thousand people.",
+        "name": "Choto Doli cyclon shelter",
+        "source": "survey",
+        "source:date": "2018-08-11",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0062402,
+          22.0039151
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Noltona",
+        "addr:ward": "9",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "Infront of chan miya house, red crecent (40*40 feet) two storied rcc building. Pillers damaged due to salinity in 2007,2011,2017 and 20% damaged.",
+        "name": "Cyclone centre",
+        "name_disaster": "Sidr, Aila, Mohasen",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0259598,
+          22.0030522
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Noltona",
+        "addr:ward": "5",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "Babuganj cyclone shelter, CPP. wall plaster damaged in 2007,2013 and 10% damaged.",
+        "name": "Cyclone Shelter",
+        "name_disaster": "No",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0260469,
+          22.0028358
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Noltona",
+        "addr:ward": "5",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Babuganj GPS cum cyclone shelter, two storeyed building",
+        "name": "GPS cum cyclone Shelter",
+        "name_disaster": "no",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.036698,
+          22.024471
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Noltona",
+        "addr:ward": "4",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Shialia GPS three storeyed bulding ,length 160ft and width 40ft",
+        "name": "GPS cum cyclone Shelter",
+        "name_disaster": "no",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "institutional"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0202855,
+          22.0296055
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Noltona",
+        "addr:ward": "3",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Wazed hujur house(tinsheed building)",
+        "name": "Core Shelter",
+        "name_disaster": "no",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0278682,
+          22.0336234
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Noltona",
+        "addr:ward": "3",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Present chairman house(two storied building)",
+        "name": "Core Shelter",
+        "name_disaster": "no",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.033077,
+          22.0431469
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Noltona",
+        "addr:ward": "2",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Abdur Rajjak Master bari, one store building",
+        "name": "Core shelter",
+        "name_disaster": "no",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0389544,
+          22.042549
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Noltona",
+        "addr:ward": "3",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Salim howlader two storied building",
+        "name": "Core shelter",
+        "name_disaster": "no",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0441518,
+          22.0495187
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Noltona",
+        "addr:ward": "2",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Abdul Kalams house, one store building",
+        "name": "Core shelter",
+        "name_disaster": "no",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0464264,
+          22.0511421
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Noltona",
+        "addr:ward": "2",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Mohammad Kobir chairman bari",
+        "name": "Core shelter",
+        "name_disaster": "no",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.717446,
+          22.5516779
+        ]
+      },
+      "properties": {
+        "addr:district": "Bhola",
+        "addr:union": "Bara Manika",
+        "addr:ward": "1",
+        "amenity": "shelter",
+        "damage": "No",
+        "description": "three-storey building, land 16 decimal, 5 teachers, 230 students",
+        "name": "Uttar - Purba Govt Primary school & Cyclone Shelter",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Institutional"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0940188,
+          22.1586587
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Badarkhali",
+        "addr:ward": "3",
+        "amenity": "shelter",
+        "damage": "No",
+        "description": "Fultola cyclone centre. It is one storied building",
+        "name": "Cyclone centre",
+        "name_disaster": "No",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0887074,
+          22.1744953
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Badarkhali",
+        "addr:ward": "2",
+        "amenity": "shelter",
+        "damage": "No",
+        "description": "Chaltatala community clinic( 1 stored building)",
+        "name": "Community shelter",
+        "name_disaster": "No",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Institutional"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0471371,
+          22.1956503
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Badarkhali",
+        "addr:ward": "8",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Middle Tetulbaria cyclone center, 3 storied building",
+        "name": "Cyclone shelter",
+        "name_disaster": "No",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1404109,
+          24.4139279
+        ]
+      },
+      "properties": {
+        "addr:district": "Sunamganj",
+        "addr:union": "Atgaon",
+        "addr:ward": "9",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Land 300 decimal, length 200 feet, width 60 feet, Two storey building with 9 rooms.",
+        "name": "Mahmudnagar high school and flood shelter center",
+        "name_disaster": "-",
+        "source": "survey",
+        "source:date": "2018-11-21",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "institutional"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2754683,
+          22.3851016
+        ]
+      },
+      "properties": {
+        "addr:district": "Khulna",
+        "addr:union": "Maharajpur",
+        "addr:ward": "6 no ward",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "The newly constructed 3-room building is used for education and shelter and it is built on about 20 century land",
+        "name": "Shimla Ait No. 127 No. Khajurardanga Sar: Primary School Kam Cyclone Center",
+        "source": "survey",
+        "source:date": "9/10/2018",
+        "source:name": "logic_undp",
+        "source_ref": "https://bit.ly/2NBTrkT",
+        "type": "institutional"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2760262,
+          22.3944388
+        ]
+      },
+      "properties": {
+        "addr:district": "Khulna",
+        "addr:union": "Maharajpur",
+        "addr:ward": "8 no ward",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Two storied constructed building",
+        "name": "124 no West Deyara Para Government Private College Kam Cyclone Center",
+        "source": "survey",
+        "source:date": "9/10/2018",
+        "source:name": "logic_undp",
+        "source_ref": "https://bit.ly/2NBTrkT",
+        "type": "institutional"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8033726,
+          22.3852405
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Dhanshagor",
+        "addr:ward": "ward 2",
+        "amenity": "shelter",
+        "description": "2 storied, 50% damaged in 2007",
+        "name": "Radha Laxmi Cyclone Shelter",
+        "name_disaster": "Sidor",
+        "source": "servey",
+        "source:date": "12-07-18",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8135006,
+          22.3868699
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Dhanshagor",
+        "addr:ward": "2",
+        "amenity": "shelter",
+        "description": "Cyclone Center beside of Dhanshagor United School, 70% damaged in 2007",
+        "name": "Cyclone Center beside of Dhanshagor United School",
+        "name_disaster": "Sidor",
+        "source": "servey",
+        "source:date": "12-07-18",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8129535,
+          22.3869244
+        ]
+      },
+      "properties": {
+        "addr:district": "Bagerhat",
+        "addr:union": "Dhanshagor",
+        "addr:ward": "ward 2",
+        "amenity": "shelter",
+        "description": "Built in 2010 1 storied area of land 10 decimal, no damage",
+        "name": "Shelter Project pace 2",
+        "source": "servey",
+        "source:date": "12-07-18",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.6315663,
+          22.7836277
+        ]
+      },
+      "properties": {
+        "addr:district": "Bhola",
+        "addr:union": "Rajapur",
+        "addr:ward": "4",
+        "amenity": "shelter",
+        "damage": "Yes",
+        "description": "20 decimal land , students 350 , . Fully destroyed. 100% damage. In the year 2015",
+        "name": "3 no rajapur Govt. Primary school & cyclone shelter",
+        "name_disaster": "River Corrosion",
+        "source": "survey",
+        "source:date": "2018-08-11",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Institutional"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.1371211,
+          21.2463148
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "Ukhiya Model GPS Cyclone Shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.1675692,
+          21.1983368
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.1676731,
+          21.1980722
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0398442,
+          21.9409215
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Nishanbaria",
+        "addr:ward": "8",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "Nalbunia Gora para GPS.2 storyed building cum shelter. In 2007, 2009 All structure are damaged 100%.",
+        "name": "Nalbunia Gora Para GPS",
+        "name_disaster": "Sidr , Aila",
+        "source": "survey",
+        "source:date": "2018-12-25",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0384602,
+          21.9408487
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Nishanbaria",
+        "addr:ward": "8",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "Bangladesh Red Cricesent cyclone shelter, 2 storyed building. In 2007, 2009, 2013 All structure are damaged 50%.",
+        "name": "Shelter CPP",
+        "name_disaster": "Sidr,Aila",
+        "source": "survey",
+        "source:date": "2018-12-25",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Institutional"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0683986,
+          21.9152148
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Nishanbaria",
+        "addr:ward": "4",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "namesi para cyclone center. Area 54*25 ft. In 2007 & 2013 Pluster broken in some places.Damaged 25%.",
+        "name": "\u0998\u09c2\u09b0\u09cd\u09a3\u09bf\u099d\u09a1\u09bc \u0995\u09c7\u09a8\u09cd\u09a6\u09cd\u09b0",
+        "name:en": "Cyclone shelter",
+        "name_disaster": "SIDR, Mohasen",
+        "source": "survey",
+        "source:date": "2018-12-25",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0828159,
+          21.9556437
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Nishanbaria",
+        "addr:ward": "3",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "Paoapara Abasan (10 families). In 2013, 70% structure was damged by Mohasen.",
+        "name": "Abasan",
+        "name_disaster": "Mohasen",
+        "source": "survey",
+        "source:date": "2018-12-25",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.077202,
+          21.9703774
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Nishanbaria",
+        "addr:ward": "1",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "West Ankujanpara Abasan (25 familes). In 2013 70% structure was damaged by Mohasen.",
+        "name": "West Ankujanpara Abasan",
+        "name_disaster": "Mohasen, poor structure",
+        "source": "survey",
+        "source:date": "2018-12-25",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.0667965,
+          22.6179724
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "Ticket Primary School & Cyclone Shelter",
+        "shelter_type": "weather_shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.6259532,
+          22.6810221
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "Boro Daragarghat GPS Cyclone Shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.2625077,
+          24.659764
+        ]
+      },
+      "properties": {
+        "addr:district": "Sunamganj",
+        "addr:union": "Bahara",
+        "addr:ward": "5",
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "one 2 floor building, 4 rooms, land area 15 decimal",
+        "name": "Sheikhhati govt. primary school cum flood shelter",
+        "source": "survey",
+        "source:date": "25/11/2018",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.7820142,
+          25.4364103
+        ]
+      },
+      "properties": {
+        "addr:district": "Kurigram",
+        "addr:union": "Char Rajibpur",
+        "addr:ward": "9",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "Annexed with west Rajibpur GPS. Basement inundates by last floods 2017only earthen plinth level eroded. Damage percentage was 30",
+        "name": "USAID School cum Flood shelter",
+        "source": "survey",
+        "source:date": "2018-05-07",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.784565,
+          25.4328956
+        ]
+      },
+      "properties": {
+        "addr:district": "Kurigram",
+        "addr:union": "Char Rajibpur",
+        "addr:ward": "5",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "Moricha kandi Flood shelter cum Government Primary School. Partially damaged in 2008 flood. Damage percentage was 10",
+        "name": "Disaster Shelter",
+        "source": "survey",
+        "source:date": "2018-05-07",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.868183,
+          21.502651
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "\u0998\u09c2\u09b0\u09cd\u09a3\u09bf\u099d\u09a1\u09bc \u0986\u09b6\u09cd\u09b0\u09af\u09bc \u0995\u09c7\u09a8\u09cd\u09a6\u09cd\u09b0",
+        "name:en": "Cyclone Shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3832276,
+          23.7584157
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4009875,
+          23.7933897
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4219474,
+          23.7273999
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "name": "\u09ae\u09a4\u09bf\u099d\u09bf\u09b2 \u09af\u09be\u09a4\u09cd\u09b0\u09c0 \u099b\u09be\u0989\u09a8\u09bf \u09a2\u09be\u0995\u09be \u09a6\u0995\u09cd\u09b7\u09bf\u09a3 \u09b8\u09bf\u099f\u09bf \u0995\u09b0\u09aa\u09cb\u09b0\u09c7\u09b6\u09a8",
+        "name:bn": "\u09ae\u09a4\u09bf\u099d\u09bf\u09b2 \u09af\u09be\u09a4\u09cd\u09b0\u09c0 \u099b\u09be\u0989\u09a8\u09bf \u09a2\u09be\u0995\u09be \u09a6\u0995\u09cd\u09b7\u09bf\u09a3 \u09b8\u09bf\u099f\u09bf \u0995\u09b0\u09aa\u09cb\u09b0\u09c7\u09b6\u09a8",
+        "name:en": "Motijheel Jatri Chauni Dhaka Dokkhin City Corporation",
+        "operator": "\u09a2\u09be\u0995\u09be \u09a6\u0995\u09cd\u09b7\u09bf\u09a3 \u09b8\u09bf\u099f\u09bf \u0995\u09b0\u09aa\u09cb\u09b0\u09c7\u09b6\u09a8",
+        "public_transport": "stop_position",
+        "shelter": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.2437596,
+          24.0008888
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.0775277,
+          21.5005297
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "bin": "yes",
+        "description": "This is a shelter project, Tha people here are very poor.",
+        "name": "\u09aa\u09be\u09b9\u09be\u09dc\u09bf\u0995\u09be \u0986\u09ac\u09be\u09b8\u09a8 \u09aa\u09cd\u09b0\u0995\u09b2\u09cd\u09aa( Paharika Shelter Project)",
+        "shelter_type": "home_shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.7600802,
+          25.0404635
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "name": "\u09aa\u09a6\u09cd\u09ae\u09be \u09ac\u09be\u09b8 \u0995\u09be\u0989\u09a8\u09cd\u099f\u09be\u09b0",
+        "name:en": "Padma bus counter",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.272802,
+          23.872458
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.2704717,
+          23.8657205
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9940831,
+          25.3977288
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.0577075,
+          23.1604947
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "\u0986\u09b6\u09cd\u09b0\u09af\u09bc \u0995\u09c7\u09a8\u09cd\u09a6\u09cd\u09b0",
+        "name:en": "Shelter",
+        "shelter_type": "weather_shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.0473643,
+          21.2148053
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9349556,
+          24.1876242
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "\u09af\u09be\u09a4\u09cd\u09b0\u09c0 \u099b\u09be\u0989\u09a8\u09bf",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.739602,
+          22.674332
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.7400205,
+          22.6742969
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.1163635,
+          23.4891424
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.117127,
+          23.4886408
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.3235949,
+          25.394488
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4813392,
+          23.7251792
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.5499811,
+          22.8624008
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "bin": "no",
+        "lit": "yes",
+        "shelter_type": "picnic_shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.1252743,
+          22.5955344
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "Joom Ghor",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.12793,
+          22.594664
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "name": "Joom Ghor view point",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4209379,
+          23.7306077
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.3632598,
+          24.8623803
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.7761748,
+          22.31544
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "area": "North Jelepara CDC",
+        "name": "North Jelepara CDC",
+        "shelter_type": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.775151,
+          22.3155921
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "area": "North Jelepara CDC",
+        "name": "North Jelepara CDC",
+        "shelter_type": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.7753114,
+          22.3151048
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "area": "North Jelepara CDC",
+        "name": "North Jelepara CDC",
+        "shelter_type": "business"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.7757554,
+          22.3156579
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "area": "North Jelepara CDC",
+        "name": "North Jelepara CDC",
+        "shelter_type": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.7762685,
+          22.3155689
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "area": "North Jelepara CDC",
+        "name": "North Jelepara CDC",
+        "shelter_type": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.7755686,
+          22.3151653
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "area": "North Jelepara CDC",
+        "name": "North Jelepara CDC",
+        "shelter_type": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.7761512,
+          22.3160158
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "area": "North Jelepara CDC",
+        "name": "North Jelepara CDC",
+        "shelter_type": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.1001161,
+          21.4702135
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "16 No. Joarianala GPS Cyclone Shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.991789,
+          22.4064063
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.9903306,
+          24.0152371
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "Asembly place"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.2728688,
+          23.9121006
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3214506,
+          23.8757058
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3105918,
+          23.8681228
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3104665,
+          23.8681353
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3108095,
+          23.8681346
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3107908,
+          23.8682059
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3107752,
+          23.8682827
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3106919,
+          23.8682613
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3106135,
+          23.8682471
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3105344,
+          23.8682276
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3104541,
+          23.8682085
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.2984773,
+          23.8738015
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.8095193,
+          25.4585708
+        ]
+      },
+      "properties": {
+        "addr:district": "Kurigram",
+        "addr:union": "Char Rajibpur",
+        "addr:ward": "Ward 5",
+        "amenity": "shelter",
+        "damage": "Yes",
+        "damage_date": "2008",
+        "damage_description": "Partially damaged in 2008 flood",
+        "damage_percent": "10",
+        "description": "Moricha kandi Flood shelter cum Government Primary School",
+        "hazard_intensity": "low",
+        "name": "Disaster Shelter",
+        "source": "survey",
+        "source:date": "02-06-2018",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary/44812"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.7755377,
+          24.457681
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.2753153,
+          23.9511364
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.7930247,
+          22.6465515
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.2411668,
+          24.0299026
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.2411769,
+          24.0306146
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.2408108,
+          24.0311492
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.2391734,
+          24.0308376
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.2403535,
+          24.0310491
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.2388285,
+          24.0311277
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.1251077,
+          22.1572968
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.1249066,
+          22.1572799
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.132193,
+          22.153156
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.6832748,
+          24.5716977
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "Somurtajahan College Jatri Chauni",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3326744,
+          21.8626214
+        ]
+      },
+      "properties": {
+        "addr:district": "Patuakhali",
+        "addr:union": "Boro Baishdia",
+        "addr:ward": "8",
+        "amenity": "shelter",
+        "description": "Concrete built building.",
+        "name": "Jahaj Mara Abasan",
+        "source": "survey",
+        "source:date": "9/9/2018",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0114913,
+          22.0061532
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "damage": "no",
+        "description": "Bilash tobok 300 acre.",
+        "name_disaster": "no",
+        "source": "survey",
+        "source:date": "2018-11-08",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.1527314,
+          22.081393
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Pancha Karalia",
+        "addr:ward": "1",
+        "amenity": "shelter",
+        "damage": "No",
+        "description": "Pocha Koralia Girls School cum cyclone center (three storyed building). . .",
+        "name": "School",
+        "source": "survey",
+        "source:date": "2018-08-11",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "Physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0632364,
+          21.9386444
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Nishanbaria",
+        "addr:ward": "6",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "Sobahan Para Abason. 30% structure was damaged by Sidr In 2007.",
+        "name": "Sobahan Para Abason",
+        "name_disaster": "Sidr",
+        "source": "survey",
+        "source:date": "2018-12-25",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "institutional"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.0839585,
+          21.9541262
+        ]
+      },
+      "properties": {
+        "addr:district": "Barguna",
+        "addr:union": "Nishanbaria",
+        "addr:ward": "3",
+        "amenity": "shelter",
+        "damage": "yes",
+        "description": "Paoapara Abasan (28 families). In 2013, 60% structure was damged by Mohasen.",
+        "name": "Paoapara Abasan",
+        "name_disaster": "Mohasen",
+        "source": "survey",
+        "source:date": "2018-12-25",
+        "source:name": "logic_undp",
+        "source_ref": "https://www.openstreetmap.org/user/aHaSaN/diary",
+        "type": "physical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8088579,
+          22.3245564
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8088534,
+          22.3237273
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.6105409,
+          24.630124
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "name": "\u09b2\u0995\u09cd\u09b7\u09c0\u0997\u099e\u09cd\u099c \u09ac\u09be\u099c\u09be\u09b0 \u09af\u09be\u09a4\u09cd\u09b0\u09c0 \u099b\u09be\u0989\u09a8\u09c0",
+        "source": "Field Survey"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4096574,
+          23.8020834
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "lean_to"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3895708,
+          23.7591411
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.5556322,
+          24.4199581
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.5552783,
+          24.419914
+        ]
+      },
+      "properties": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.0775062,
+          21.5005142
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3643642,
+          22.6604963
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "name": "\u09b8\u09c1\u09ab\u09bf\u09af\u09bc\u09be \u0995\u09be\u09ae\u09be\u09b2 \u099a\u09a4\u09cd\u09a4\u09cd\u09ac\u09b0",
+        "name:en": "Sufia Kamal Chattar",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3642674,
+          22.6611729
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "name": "\u09aa\u09cd\u09b0\u09c0\u09a4\u09bf\u09b2\u09a4\u09be \u099a\u09a4\u09cd\u09ac\u09b0",
+        "name:en": "Pritilata Chattar",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3634245,
+          22.6608961
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "name": "\u09b9\u09a4\u09be\u09b6\u09be\u09b0 \u099a\u09a4\u09cd\u09ac\u09b0",
+        "name:en": "Hotashar Chattar",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3634757,
+          22.660315
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "name": "\u098f\u0997\u09be\u09b0\u09cb \u099a\u09a4\u09cd\u09ac\u09b0",
+        "name:en": "Egaro Chattar",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.0577037,
+          23.1605077
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "operator": "Government",
+        "shelter_type": "weather_shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3685702,
+          22.6918989
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3681889,
+          22.692892
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.0482217,
+          21.2162948
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.0478514,
+          21.2155083
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.3995461,
+          23.7308642
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "bin": "yes",
+        "building": "yes",
+        "operator": "Shri Shri Ramna Kali Temple",
+        "shelter_type": "pavilion"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.7425578,
+          24.0430363
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1338253,
+          23.1875943
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "name": "\u0995\u09c3\u09b7\u09cd\u09a3\u09aa\u09c1\u09b0 \u0986\u09b6\u09cd\u09b0\u09af\u09bc\u09a3 \u09aa\u09cd\u09b0\u0995\u09b2\u09cd\u09aa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.363878,
+          22.6610023
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "name": "Mukto monch",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.8423026,
+          24.0402055
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.8686039,
+          24.0532419
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.7142908,
+          23.9201112
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.7136645,
+          23.9135591
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.713701,
+          23.913621
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.7186509,
+          23.9196352
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.971095,
+          22.4597927
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "bin": "no",
+        "building": "shed",
+        "lit": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.9920174,
+          24.4191215
+        ]
+      },
+      "properties": {
+        "amenity": "shelter",
+        "building": "yes",
+        "name": "\u09ad\u09bf \u0986\u0987 \u09aa\u09bf \u099b\u09be\u0989\u09a8\u09bf",
+        "shelter_type": "gazebo"
+      }
+    }
+  ]
+}
